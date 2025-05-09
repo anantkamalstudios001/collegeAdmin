@@ -13,32 +13,16 @@ import { AqarReportsSupportingDocumentsUploadComponent } from './aqar-reports-su
 
 export const DEPARTMENT_ROUTE: Route[] = [
   {
-    path: 'iiqa-upload-editor',
+    path: 'admission-guidelines',
     component:IiqaUploadEditorComponent,
   },
   {
-    path: 'iqac-members-activities-manager',
+    path: 'apply-now-form-setup',
     component:IqacMembersActivitiesManagerComponent,
   },
   {
-    path: 'best-practices-editor',
+    path: 'fee-structure',
     component:BestPracticesEditorComponent,
-  },
-  {
-    path: 'feedback-forms',
-    component:FeedbackFormsComponent,
-  },
-  {
-    path: 'naac-ssr-documents-manager',
-    component:NaacSsrDocumentsManagerComponent,
-  },
-  {
-    path: 'naac-documents-upload',
-    component:NaacDocumentsUploadComponent,
-  },
-  {
-    path: 'aqar-reports-supporting-documents-upload',
-    component:AqarReportsSupportingDocumentsUploadComponent,
   },
   { path: '**', component: Page404Component },
 ];

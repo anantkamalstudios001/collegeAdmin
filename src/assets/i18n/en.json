@@ -22,90 +22,84 @@
         "MAJOR-SECTIONS": "Shortcut to Major Section"
       }
     },
-    "HOME-PAGE-MANAGEMENT": {
-      "TEXT": "Home Page Management",
+    "HOME": {
+      "TEXT": "Home",
       "LIST": {
-        "SLIDER-MANAGER": "Slider Manager",
-        "ANNOUNCEMENT-MAANAGEMENT": "Announcement Management",
-        "EVENTS-HIGHTLIGHT-EDITOR": "Events Highlight Editor",
-        "ADMISSIONS-STATUS-TOGGLE": "Admissions Status Toggle"
+        "BANNER-MANAGEMENT": "Banner Management",
+        "WELCOME-MESSAGE": "Welcome Message"
       }
     },
-    "ABOUT-US": {
-      "TEXT": "About US",
+    "ABOUT": {
+      "TEXT": "About",
       "LIST": {
-        "EDIT-BOARD-OF-MEMBERS": "Edit Board of Members",
-        "PRESIDENTS-DESK-MESSAGE-EDITOR": "Presidents Desk Message Editor",
-        "PRINCIPALS-DESK-MESSAGE-EDITOR": "Principals Desk Message Editor",
-        "LOCAL-COMMITEE-MANAGEMENT": "Local Committee Management",
-        "COLLEGE-COMMITTEES-MANAGER": "College Committees Manager"
+        "VISION-MISSION": "Vision & Mission",
+        "PRINCIPALS-MESSAGE": "Principal’s Message",
+        "COLLEGE-HISTORY": "College History",
+        "GOVERNING-BODY": "Governing Body"
       }
     },
-    "DEPARTMENTS-MANAGEMENT": {
-      "TEXT": "Departments Management",
+    "ACADEMICS": {
+      "TEXT": "Academics",
       "LIST": {
-        "MACHANICAL-ENGINEERING": "Machanical Engineering",
-        "COMPUTER-ENGINEERING": "Computer Engineering",
-        "CIVIL-ENGINEERING": "Civil Engineering",
-        "ELECTRICAL-ENGINEERING": "Electrical Engineering",
-        "FIRST-YEAR-ENGINEERING": "First Year Engineering",
-        "MBA-PROGRAM": "MBA Program"
+        "COURSES": "Courses",
+        "DEPARTMENTS": "Departments",
+        "ACADEMIC-CALENDER": "Academic Calendar"
       }
     },
-    "STUDENTS-SECTION": {
-      "TEXT": "Student Section",
+    "fACULTY": {
+      "TEXT": "faculty",
       "LIST": {
-        "ADMISSION-SECTION": "Adminssion Section",
-        "SCHOLARSHIP-SECTION": "Scholarships Section",
-        "FEE-STRUCTURE": "Fee Structure",
-        "DOWNLOAD-MAANGER": "Downloads Manager",
-        "LIBRARY-MAANGER": "Library Manager",
-        "FACILITIES-MANAGEMENT": "Facilities Management",
-        "GRIEVANCE-REDRESSAL": "Grievance Redressal",
-        "ACADAMIC-CALENDER": "Academic Calendar"
+        "ADD-FACULTY-MEMBER": "Add Faculty Member",
+        "FACULTY-DIRECTORY": "Faculty Directory"
       }
     },
-    "PLACEMENT-CELL": {
-      "TEXT": "Placement Cell",
+    "STUDENTS": {
+      "TEXT": "Students",
       "LIST": {
-        "ABOUT-PLACEMENT-DEPARTMENT-EDITOR": "About Placement Department Editor",
-        "PLACEMENT-ACTIVITIES-MANAGER": "Placement Activities Manager",
-        "RECRUITERS-LIST-MAMANGER": "Recruiters List Manager",
-        "PLACEMENT-STATISTICS": "Placement Statistics",
-        "PLACEMENTS-OFFICERS-MESSAGE-EDITOR": "Placement Officers Message Editor"
+        "STUDENT-COUNCIL": "Student Council",
+        "STUDENT-ACHIEVEMENTS": "Student Achievements",
+        "STUDENT-GRIEVANCES": "Student Grievances"
       }
     },
-    "NAAC-ACCREDITATION": {
-      "TEXT": "NAAC (Accreditation)",
+    "ADMINISTRATION": {
+      "TEXT": "Administration",
       "LIST": {
-        "IIQA-UPLOAD-EDITOR": "IIQA Upload/Editor",
-        "IQAC-MEMBERS-&-ACTIVITIES-MANAGER": "IQAC Members & Activities Manager",
-        "BEST-PRACTICES-EDITOR": "Best Practices Editor",
-        "FEEDBACK-FORMS": "Feedback Forms",
-        "NAAC-SSR-DOCUMENT-MANAGER": "NAAC SSR Document Manager",
-        "NAAC-DOCUMENTS-UPLOAD": "NAAC Documents Upload (DVV, SOP)",
-        "AQAR-REPORTS-&-SUPPORTING-DOCUMENTS-UPLOAD": "AQAR Reports & Supporting Documents Upload"
+        "ADMINISTRATIVE-STAFF": "Administrative Staff",
+        "OFFICE-BEARERS": "Office Bearers"
       }
     },
-    "RTI-SECTION": {
-      "TEXT": "RTI Section",
+    "ADMISSION": {
+      "TEXT": "Admissions",
       "LIST": {
-        "RTI-DECLARATION-EDITOR": "RTI DECLARATION EDITOR",
-        "RTI-COMMITTEE-MEMBER-MANAGER": "RTI Committee Member Manager"
+        "ADMISSION-GUIDELINES": "Admission Guidelines",
+        "APPLY-NOW-FORM-SETUP": "Apply Now Form Setup",
+        "FEE-STRUCTURE": "Fee Structure"
       }
     },
-    "GALLERY-MANAGEMENT": {
-      "TEXT": " Gallery Management",
+    "PLACEMENTS": {
+      "TEXT": "Placements",
       "LIST": {
-        "PHOTO-ALBUMS": "Photo Albums",
-        "VIDEO-MANAGER": "Video Manager"
+        "RECRUITERS-LIST": "Recruiters List",
+        "STUDENT-PLACEMENTS-RECORD": "Student Placements Record",
+        "PLACEMENT-DRIVES": "Placement Drives"
       }
     },
-    "NEWS-&-UPDATES": {
-      "TEXT": "News & Updates",
+    "E-RESOURCES": {
+      "TEXT": "E-resources",
       "LIST": {
-        "NEWS-ARTICLES": "News Articles",
-        "CATEGORIZE-ADMISSIONS-RESULTS-EVENTS": "Categorize - Admissions, Results, Events"
+        "LIBRARY-ACCESS": "Library Access",
+        "ONLINE-JOUNALS": "Online Journals",
+        "STUDY-MATERIAL-UPLOAD": "Study Material Upload"
+      }
+    },
+
+
+    "CAMPUS-LIFE": {
+      "TEXT": "Campus Life",
+      "LIST": {
+        "CLUBS-AND-COMMITTEES": "Clubs and Committees",
+        "EVENTS": "Events",
+        "FACILITIES": "Facilities"
       }
     },
 
@@ -117,27 +111,65 @@
 
 
 
-
-
-
-
-    "CONTACT-PAGE": {
-      "TEXT": "Contact Page",
+    "DOWNLOADS": {
+      "TEXT": "Downloads",
       "LIST": {
-        "CONTACT-INFORMATION-EDITOR": "Contact Information Editor",
-        "CONTACT-FORM-SUBMISSION-VIEWER": "Contact Form Submissions Viewer",
-        "CAMPUS-MAP-EMBED-EDITOR": "Campus Map Embed/Editor"
+        "FORMS": "Forms",
+        "BROCHURES": "Brochures",
+        "CIRCULARS": "Circulars"
       }
     },
-    "FOOTER-LINK-EDITOR": {
-      "TEXT": "Footer Links Editor",
+    "ALUMNI": { 
+      "TEXT": "Alumni",
       "LIST": {
-        "FOOTER-NAVIGATION": "Footer Navigation",
-        "COLLEGE-ADDRESS-EDITOR": "College Address Editor",
-        "HELPLINE-NUMBERS-EDITOR": "Helpline Numbers Editor",
-        "PRIVACY-POLICY-DESCLAIMER-EDITOR": "Privacy Policy / Disclaimer Editor"
+        "REGISTER-ALUMNI": "Register Alumni",
+        "ALUMNI-STORIES": "Alumni Stories",
+        "ALUMNI-MEETS": "Alumni Meets"
       }
     },
+    "NOTICES": {
+      "TEXT": "Notices",
+      "LIST": {
+        "ADD-NOTICE": "Add Notice",
+        "VIEW-NOTICES": "View Notices",
+        "EXPIRED-NOTICES": "Expired Notices"
+      }
+    },
+    "CONTACT": {
+      "TEXT": "Contact",
+          "LIST": {
+        "COLLEGE-CONTACT-INFO": "College Contact Info",
+        "MAP-LOCATION": "Map Location",
+        "FEEDBACK-INBOX": "Feedback Inbox"
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     "TEACHER": {
       "TEXT": "Teacher",
       "LIST": {

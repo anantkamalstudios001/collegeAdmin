@@ -65,7 +65,7 @@
 
     {
       "path": "",
-      "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.TEXT",
+      "title": "MENUITEMS.HOME.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "display_settings",
       "class": "menu-toggle",
@@ -75,8 +75,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/home-page-management/slider-management",
-          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.SLIDER-MANAGER",
+          "path": "/admin/home/banner-management",
+          "title": "MENUITEMS.HOME.LIST.BANNER-MANAGEMENT",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -87,32 +87,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/home-page-management/announcement-management",
-          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.ANNOUNCEMENT-MAANAGEMENT",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/home-page-management/events-highlight-editor",
-          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.EVENTS-HIGHTLIGHT-EDITOR",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/home-page-management/admission-status-toggle",
-          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.ADMISSIONS-STATUS-TOGGLE",
+          "path": "/admin/home/welcome-message",
+          "title": "MENUITEMS.HOME.LIST.WELCOME-MESSAGE",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -126,7 +102,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.ABOUT-US.TEXT",
+      "title": "MENUITEMS.ABOUT.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "person",
       "class": "menu-toggle",
@@ -136,8 +112,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/about-us/edit-board-of-members",
-          "title": "MENUITEMS.ABOUT-US.LIST.EDIT-BOARD-OF-MEMBERS",
+          "path": "/admin/about/Vision-&-Mission",
+          "title": "MENUITEMS.ABOUT.LIST.VISION-MISSION",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -148,8 +124,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/about-us/presidents-desk-message-editor",
-          "title": "MENUITEMS.ABOUT-US.LIST.PRESIDENTS-DESK-MESSAGE-EDITOR",
+          "path": "/admin/about/Principal’s-Message",
+          "title": "MENUITEMS.ABOUT.LIST.PRINCIPALS-MESSAGE",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -160,8 +136,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/about-us/principals-desk-message-editor",
-          "title": "MENUITEMS.ABOUT-US.LIST.PRINCIPALS-DESK-MESSAGE-EDITOR",
+          "path": "/admin/about/College History",
+          "title": "MENUITEMS.ABOUT.LIST.COLLEGE-HISTORY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -172,20 +148,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/about-us/local-committee-management",
-          "title": "MENUITEMS.ABOUT-US.LIST.LOCAL-COMMITEE-MANAGEMENT",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/about-us/college-committees-manager",
-          "title": "MENUITEMS.ABOUT-US.LIST.COLLEGE-COMMITTEES-MANAGER",
+          "path": "/admin/about/Governing Body",
+          "title": "MENUITEMS.ABOUT.LIST.GOVERNING-BODY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -199,7 +163,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.TEXT",
+      "title": "MENUITEMS.ACADEMICS.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "people_alt",
       "class": "menu-toggle",
@@ -209,8 +173,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/departments-management/machanical-engineering",
-          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.MACHANICAL-ENGINEERING",
+          "path": "/admin/academics/courses",
+          "title": "MENUITEMS.ACADEMICS.LIST.COURSES",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -221,8 +185,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/departments-management/computer-engineering",
-          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.COMPUTER-ENGINEERING",
+          "path": "/admin/academics/departments",
+          "title": "MENUITEMS.ACADEMICS.LIST.DEPARTMENTS",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -233,44 +197,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/departments-management/civil-engineering",
-          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.CIVIL-ENGINEERING",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/departments-management/electrical-engineering",
-          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.ELECTRICAL-ENGINEERING",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/departments-management/first-year-engineering",
-          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.FIRST-YEAR-ENGINEERING",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/departments-management/mba-program",
-          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.MBA-PROGRAM",
+          "path": "/admin/academics/academic-calendar",
+          "title": "MENUITEMS.ACADEMICS.LIST.ACADEMIC-CALENDER",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -284,7 +212,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.STUDENTS-SECTION.TEXT",
+      "title": "MENUITEMS.fACULTY.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "school",
       "class": "menu-toggle",
@@ -294,8 +222,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/student-section/admission-section",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.ADMISSION-SECTION",
+          "path": "/admin/faculty/add-faculty-member",
+          "title": "MENUITEMS.fACULTY.LIST.ADD-FACULTY-MEMBER",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -305,81 +233,10 @@
           "role": [""],
           "submenu": []
         },
+        
         {
-          "path": "/admin/student-section/scholarship-section",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.SCHOLARSHIP-SECTION",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/student-section/fee-structure",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.FEE-STRUCTURE",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/student-section/download-manager",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.DOWNLOAD-MAANGER",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/student-section/library-manager",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.LIBRARY-MAANGER",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/student-section/facilities-management",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.FACILITIES-MANAGEMENT",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/student-section/grievance-redressal",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.GRIEVANCE-REDRESSAL",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/student-section/acadamic-calender",
-          "title": "MENUITEMS.STUDENTS-SECTION.LIST.ACADAMIC-CALENDER",
+          "path": "/admin/faculty/faculty-directory",
+          "title": "MENUITEMS.fACULTY.LIST.FACULTY-DIRECTORY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -393,7 +250,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.PLACEMENT-CELL.TEXT",
+      "title": "MENUITEMS.STUDENTS.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "local_library",
       "class": "menu-toggle",
@@ -403,8 +260,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/placement-cell/about-placement-department-editor",
-          "title": "MENUITEMS.PLACEMENT-CELL.LIST.ABOUT-PLACEMENT-DEPARTMENT-EDITOR",
+          "path": "/admin/students/student-council",
+          "title": "MENUITEMS.STUDENTS.LIST.STUDENT-COUNCIL",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -415,8 +272,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/placement-cell/placement-activities-manager",
-          "title": "MENUITEMS.PLACEMENT-CELL.LIST.PLACEMENT-ACTIVITIES-MANAGER",
+          "path": "/admin/students/student-achievements",
+          "title": "MENUITEMS.STUDENTS.LIST.STUDENT-ACHIEVEMENTS",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -427,32 +284,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/placement-cell/recruiters-list-manager",
-          "title": "MENUITEMS.PLACEMENT-CELL.LIST.RECRUITERS-LIST-MAMANGER",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/placement-cell/placement-statistics",
-          "title": "MENUITEMS.PLACEMENT-CELL.LIST.PLACEMENT-STATISTICS",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/placement-cell/placement-oficers-message-editor",
-          "title": "MENUITEMS.PLACEMENT-CELL.LIST.PLACEMENTS-OFFICERS-MESSAGE-EDITOR",
+          "path": "/admin/students/student-grievances",
+          "title": "MENUITEMS.STUDENTS.LIST.STUDENT-GRIEVANCES",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -466,7 +299,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.NAAC-ACCREDITATION.TEXT",
+      "title": "MENUITEMS.ADMINISTRATION.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "business",
       "class": "menu-toggle",
@@ -476,8 +309,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/naac-accreditation/iiqa-upload-editor",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.IIQA-UPLOAD-EDITOR",
+          "path": "/admin/adminstration/administrative-staff",
+          "title": "MENUITEMS.ADMINISTRATION.LIST.ADMINISTRATIVE-STAFF",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -488,68 +321,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/naac-accreditation/iqac-members-activities-manager",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.IQAC-MEMBERS-&-ACTIVITIES-MANAGER",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/naac-accreditation/best-practices-editor",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.BEST-PRACTICES-EDITOR",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/naac-accreditation/feedback-forms",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.FEEDBACK-FORMS",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/naac-accreditation/naac-ssr-documents-manager",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.NAAC-SSR-DOCUMENT-MANAGER",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/naac-accreditation/naac-documents-upload",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.NAAC-DOCUMENTS-UPLOAD",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/naac-accreditation/aqar-reports-supporting-documents-upload",
-          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.AQAR-REPORTS-&-SUPPORTING-DOCUMENTS-UPLOAD",
+          "path": "/admin/adminstration/office-bearers",
+          "title": "MENUITEMS.ADMINISTRATION.LIST.OFFICE-BEARERS",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -563,7 +336,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.RTI-SECTION.TEXT",
+      "title": "MENUITEMS.ADMISSION.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "face",
       "class": "menu-toggle",
@@ -573,8 +346,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/rti-section/rti-declaration-editor",
-          "title": "MENUITEMS.RTI-SECTION.LIST.RTI-DECLARATION-EDITOR",
+          "path": "/admin/admission/admission-guidelines",
+          "title": "MENUITEMS.ADMISSION.LIST.ADMISSION-GUIDELINES",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -585,8 +358,20 @@
           "submenu": []
         },
         {
-          "path": "/admin/rti-section/rti-committee-member-manager",
-          "title": "MENUITEMS.RTI-SECTION.LIST.RTI-COMMITTEE-MEMBER-MANAGER",
+          "path": "/admin/admission/apply-now-form-setup",
+          "title": "MENUITEMS.ADMISSION.LIST.APPLY-NOW-FORM-SETUP",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/admission/fee-structure",
+          "title": "MENUITEMS.ADMISSION.LIST.FEE-STRUCTURE",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -598,6 +383,155 @@
         }
       ]
     },
+     {
+      "path": "",
+      "title": "MENUITEMS.PLACEMENTS.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "face",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/placements/recruiters-list",
+          "title": "MENUITEMS.PLACEMENTS.LIST.RECRUITERS-LIST",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/placements/student-placements-record",
+          "title": "MENUITEMS.PLACEMENTS.LIST.STUDENT-PLACEMENTS-RECORD",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/placements/placement-drives",
+          "title": "MENUITEMS.PLACEMENTS.LIST.PLACEMENT-DRIVES",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+     {
+      "path": "",
+      "title": "MENUITEMS.E-RESOURCES.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "face",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/e-resources/library-access",
+          "title": "MENUITEMS.E-RESOURCES.LIST.LIBRARY-ACCESS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/e-resources/online-journals",
+          "title": "MENUITEMS.E-RESOURCES.LIST.ONLINE-JOUNALS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/e-resources/study-material-upload",
+          "title": "MENUITEMS.E-RESOURCES.LIST.STUDY-MATERIAL-UPLOAD",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+
+
+    {
+      "path": "",
+      "title": "MENUITEMS.CAMPUS-LIFE.TEXT",
+      "iconType": "material-icons-outlined",
+    "icon": "gite",
+    "class": "menu-toggle",
+    "groupTitle": false,
+    "badge": "",
+    "badgeClass": "",
+    "role": ["Admin"],
+    "submenu": [
+      {
+        "path": "/admin/campus-life/clubs-and-committees",
+        "title": "MENUITEMS.CAMPUS-LIFE.LIST.CLUBS-AND-COMMITTEES",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": ["Admin"],
+        "submenu": []
+      },
+      {
+        "path": "/admin/campus-life/events",
+        "title": "MENUITEMS.CAMPUS-LIFE.LIST.EVENTS",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": ["Admin"],
+        "submenu": []
+      },
+      {
+        "path": "/admin/campus-life/facilities",
+        "title": "MENUITEMS.CAMPUS-LIFE.LIST.FACILITIES",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": ["Admin"],
+        "submenu": []
+      }
+    ]
+  },
 
 
 
@@ -629,7 +563,7 @@
 
     {
       "path": "",
-      "title": "MENUITEMS.GALLERY-MANAGEMENT.TEXT",
+      "title": "MENUITEMS.DOWNLOADS.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "airline_seat_individual_suite",
       "class": "menu-toggle",
@@ -639,8 +573,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/gallery-management/photo-albums",
-          "title": "MENUITEMS.GALLERY-MANAGEMENT.LIST.PHOTO-ALBUMS",
+          "path": "/admin/downloads/forms",
+          "title": "MENUITEMS.DOWNLOADS.LIST.FORMS",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -651,8 +585,20 @@
           "submenu": []
         },
         {
-          "path": "/admin/gallery-management/video-manager",
-          "title": "MENUITEMS.GALLERY-MANAGEMENT.LIST.VIDEO-MANAGER",
+          "path": "/admin/downloads/brochures",
+          "title": "MENUITEMS.DOWNLOADS.LIST.BROCHURES",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/downloads/circulars",
+          "title": "MENUITEMS.DOWNLOADS.LIST.CIRCULARS",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -664,9 +610,20 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+
+
     {
       "path": "",
-      "title": "MENUITEMS.NEWS-&-UPDATES.TEXT",
+      "title": "MENUITEMS.ALUMNI.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "monetization_on",
       "class": "menu-toggle",
@@ -676,8 +633,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/news-updates/news-articles",
-          "title": "MENUITEMS.NEWS-&-UPDATES.LIST.NEWS-ARTICLES",
+          "path": "/admin/alumni/register-alumni",
+          "title": "MENUITEMS.ALUMNI.LIST.REGISTER-ALUMNI",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -688,8 +645,20 @@
           "submenu": []
         },
         {
-          "path": "/admin/news-updates/categorize-admission-results-events",
-          "title": "MENUITEMS.NEWS-&-UPDATES.LIST.CATEGORIZE-ADMISSIONS-RESULTS-EVENTS",
+          "path": "/admin/alumni/alumni-stories",
+          "title": "MENUITEMS.ALUMNI.LIST.ALUMNI-STORIES",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+            {
+          "path": "/admin/alumni/alumni-meets",
+          "title": "MENUITEMS.ALUMNI.LIST.ALUMNI-MEETS",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -703,34 +672,9 @@
     },
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       "path": "",
-      "title": "MENUITEMS.CONTACT-PAGE.TEXT",
+      "title": "MENUITEMS.NOTICES.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "gite",
       "class": "menu-toggle",
@@ -740,8 +684,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/contact-page/contact-information-editor",
-          "title": "MENUITEMS.CONTACT-PAGE.CONTACT-INFORMATION-EDITOR",
+          "path": "/admin/notices/contact-information-editor",
+          "title": "MENUITEMS.NOTICES.LIST.ADD-NOTICE",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -752,8 +696,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/contact-page/contact-form-submission-viewer",
-          "title": "MENUITEMS.CONTACT-PAGE.CONTACT-FORM-SUBMISSION-VIEWER",
+          "path": "/admin/notices/contact-form-submission-viewer",
+          "title": "MENUITEMS.NOTICES.LIST.VIEW-NOTICES",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -764,8 +708,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/contact-page/campus-map-embed-editor",
-          "title": "MENUITEMS.CONTACT-PAGE.CAMPUS-MAP-EMBED-EDITOR",
+          "path": "/admin/notices/campus-map-embed-editor",
+          "title": "MENUITEMS.NOTICES.LIST.EXPIRED-NOTICES",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -779,7 +723,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.FOOTER-LINK-EDITOR.TEXT",
+      "title": "MENUITEMS.CONTACT.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "manage_accounts",
       "class": "menu-toggle",
@@ -789,8 +733,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/footer-link-editor/footer-navigation",
-          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.FOOTER-NAVIGATION",
+          "path": "/admin/contact/college-contact-info",
+          "title": "MENUITEMS.CONTACT.LIST.COLLEGE-CONTACT-INFO",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -801,8 +745,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/footer-link-editor/college-address-editor",
-          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.COLLEGE-ADDRESS-EDITOR",
+          "path": "/admin/contact/map-location",
+          "title": "MENUITEMS.CONTACT.LIST.MAP-LOCATION",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -813,20 +757,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/footer-link-editor/helpline-numbers-editor",
-          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.HELPLINE-NUMBERS-EDITOR",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/footer-link-editor/privacy-desclaimer-editor",
-          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.PRIVACY-POLICY-DESCLAIMER-EDITOR",
+          "path": "/admin/contact/feedback-inbox",
+          "title": "MENUITEMS.CONTACT.LIST.FEEDBACK-INBOX",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -838,6 +770,125 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     {
       "path": "/teacher/dashboard",

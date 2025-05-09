@@ -38,8 +38,26 @@ export const ADMIN_ROUTE: Route[] = [
     loadChildren: () =>
       import('./library/library.routes').then((m) => m.LIBRARY_ROUTE),
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
-    path: 'naac-accreditation',
+    path: 'admission',
     loadChildren: () =>
       import('./departments/departments.routes').then(
         (m) => m.DEPARTMENT_ROUTE
@@ -55,26 +73,54 @@ export const ADMIN_ROUTE: Route[] = [
     loadChildren: () =>
       import('./holidays/holidays.routes').then((m) => m.HOLIDAY_ROUTE),
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   {
-    path: 'news-updates',
+    path: 'downloads',
     loadChildren: () => import('./fees/fees.routes').then((m) => m.FEES_ROUTE),
   },
   {
-    path: 'contact-page',
+    path: 'alumni',
     loadChildren: () =>
       import('./hostel/hostel.routes').then((m) => m.HOSTEL_ROUTE),
   },
   {
-    path: 'footer-links-editor',
+    path: 'notices',
     loadChildren: () =>
       import('./class/class.routes').then((m) => m.CLASS_ROUTE),
   },
   {
-    path: 'footer-link-editor',
+    path: 'contact',
     loadChildren: () =>
       import('./human-resources/human-resources.routes').then(
         (m) => m.HR_ROUTE
       ),
   },
+
+
+
+
+
+
+
+
   { path: '**', component: Page404Component },
 ];
