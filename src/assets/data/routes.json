@@ -1,0 +1,1074 @@
+{
+  "routes": [
+    {
+      "path": "",
+      "title": "MENUITEMS.MAIN.TEXT",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": true,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["All"],
+      "submenu": []
+    },
+
+    {
+      "path": "",
+      "title": "MENUITEMS.DASHBOARD.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "space_dashboard",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/dashboard/quick-stats",
+          "title": "MENUITEMS.DASHBOARD.LIST.QUICK-STATS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/dashboard/recent-updates",
+          "title": "MENUITEMS.DASHBOARD.LIST.RECENT-UPDATES",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/dashboard/major-sections",
+          "title": "MENUITEMS.DASHBOARD.LIST.MAJOR-SECTIONS",
+          "iconType": "material-icons-outlined",
+          "icon": "",
+          "class": "",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+
+    {
+      "path": "",
+      "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "display_settings",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/home-page-management/slider-management",
+          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.SLIDER-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/home-page-management/announcement-management",
+          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.ANNOUNCEMENT-MAANAGEMENT",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/home-page-management/events-highlight-editor",
+          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.EVENTS-HIGHTLIGHT-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/home-page-management/admission-status-toggle",
+          "title": "MENUITEMS.HOME-PAGE-MANAGEMENT.LIST.ADMISSIONS-STATUS-TOGGLE",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.ABOUT-US.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "person",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/about-us/edit-board-of-members",
+          "title": "MENUITEMS.ABOUT-US.LIST.EDIT-BOARD-OF-MEMBERS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/about-us/presidents-desk-message-editor",
+          "title": "MENUITEMS.ABOUT-US.LIST.PRESIDENTS-DESK-MESSAGE-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/about-us/principals-desk-message-editor",
+          "title": "MENUITEMS.ABOUT-US.LIST.PRINCIPALS-DESK-MESSAGE-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/about-us/local-committee-management",
+          "title": "MENUITEMS.ABOUT-US.LIST.LOCAL-COMMITEE-MANAGEMENT",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/about-us/college-committees-manager",
+          "title": "MENUITEMS.ABOUT-US.LIST.COLLEGE-COMMITTEES-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "people_alt",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/departments-management/machanical-engineering",
+          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.MACHANICAL-ENGINEERING",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/departments-management/computer-engineering",
+          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.COMPUTER-ENGINEERING",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/departments-management/civil-engineering",
+          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.CIVIL-ENGINEERING",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/departments-management/electrical-engineering",
+          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.ELECTRICAL-ENGINEERING",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/departments-management/first-year-engineering",
+          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.FIRST-YEAR-ENGINEERING",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/departments-management/mba-program",
+          "title": "MENUITEMS.DEPARTMENTS-MANAGEMENT.LIST.MBA-PROGRAM",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.STUDENTS-SECTION.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "school",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/student-section/admission-section",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.ADMISSION-SECTION",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/scholarship-section",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.SCHOLARSHIP-SECTION",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/fee-structure",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.FEE-STRUCTURE",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/download-manager",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.DOWNLOAD-MAANGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/library-manager",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.LIBRARY-MAANGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/facilities-management",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.FACILITIES-MANAGEMENT",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/grievance-redressal",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.GRIEVANCE-REDRESSAL",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/student-section/acadamic-calender",
+          "title": "MENUITEMS.STUDENTS-SECTION.LIST.ACADAMIC-CALENDER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.PLACEMENT-CELL.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "local_library",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/placement-cell/about-placement-department-editor",
+          "title": "MENUITEMS.PLACEMENT-CELL.LIST.ABOUT-PLACEMENT-DEPARTMENT-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/placement-cell/placement-activities-manager",
+          "title": "MENUITEMS.PLACEMENT-CELL.LIST.PLACEMENT-ACTIVITIES-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/placement-cell/recruiters-list-manager",
+          "title": "MENUITEMS.PLACEMENT-CELL.LIST.RECRUITERS-LIST-MAMANGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/placement-cell/placement-statistics",
+          "title": "MENUITEMS.PLACEMENT-CELL.LIST.PLACEMENT-STATISTICS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/placement-cell/placement-oficers-message-editor",
+          "title": "MENUITEMS.PLACEMENT-CELL.LIST.PLACEMENTS-OFFICERS-MESSAGE-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.NAAC-ACCREDITATION.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "business",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/naac-accreditation/iiqa-upload-editor",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.IIQA-UPLOAD-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/naac-accreditation/iqac-members-activities-manager",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.IQAC-MEMBERS-&-ACTIVITIES-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/naac-accreditation/best-practices-editor",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.BEST-PRACTICES-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/naac-accreditation/feedback-forms",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.FEEDBACK-FORMS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/naac-accreditation/naac-ssr-documents-manager",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.NAAC-SSR-DOCUMENT-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/naac-accreditation/naac-documents-upload",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.NAAC-DOCUMENTS-UPLOAD",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/naac-accreditation/aqar-reports-supporting-documents-upload",
+          "title": "MENUITEMS.NAAC-ACCREDITATION.LIST.AQAR-REPORTS-&-SUPPORTING-DOCUMENTS-UPLOAD",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.RTI-SECTION.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "face",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/rti-section/rti-declaration-editor",
+          "title": "MENUITEMS.RTI-SECTION.LIST.RTI-DECLARATION-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/rti-section/rti-committee-member-manager",
+          "title": "MENUITEMS.RTI-SECTION.LIST.RTI-COMMITTEE-MEMBER-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "path": "",
+      "title": "MENUITEMS.GALLERY-MANAGEMENT.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "airline_seat_individual_suite",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/gallery-management/photo-albums",
+          "title": "MENUITEMS.GALLERY-MANAGEMENT.LIST.PHOTO-ALBUMS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/gallery-management/video-manager",
+          "title": "MENUITEMS.GALLERY-MANAGEMENT.LIST.VIDEO-MANAGER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.NEWS-&-UPDATES.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "monetization_on",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/news-updates/news-articles",
+          "title": "MENUITEMS.NEWS-&-UPDATES.LIST.NEWS-ARTICLES",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/news-updates/categorize-admission-results-events",
+          "title": "MENUITEMS.NEWS-&-UPDATES.LIST.CATEGORIZE-ADMISSIONS-RESULTS-EVENTS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "path": "",
+      "title": "MENUITEMS.CONTACT-PAGE.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "gite",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/contact-page/contact-information-editor",
+          "title": "MENUITEMS.CONTACT-PAGE.CONTACT-INFORMATION-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": ["Admin"],
+          "submenu": []
+        },
+        {
+          "path": "/admin/contact-page/contact-form-submission-viewer",
+          "title": "MENUITEMS.CONTACT-PAGE.CONTACT-FORM-SUBMISSION-VIEWER",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": ["Admin"],
+          "submenu": []
+        },
+        {
+          "path": "/admin/contact-page/campus-map-embed-editor",
+          "title": "MENUITEMS.CONTACT-PAGE.CAMPUS-MAP-EMBED-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": ["Admin"],
+          "submenu": []
+        }
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.FOOTER-LINK-EDITOR.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "manage_accounts",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/footer-link-editor/footer-navigation",
+          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.FOOTER-NAVIGATION",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/footer-link-editor/college-address-editor",
+          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.COLLEGE-ADDRESS-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/footer-link-editor/helpline-numbers-editor",
+          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.HELPLINE-NUMBERS-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/footer-link-editor/privacy-desclaimer-editor",
+          "title": "MENUITEMS.FOOTER-LINK-EDITOR.LIST.PRIVACY-POLICY-DESCLAIMER-EDITOR",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+
+    {
+      "path": "/teacher/dashboard",
+      "title": "MENUITEMS.TEACHER.LIST.DASHBOARD",
+      "iconType": "material-icons-outlined",
+      "icon": "space_dashboard",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/lectures",
+      "title": "MENUITEMS.TEACHER.LIST.LECTURES",
+      "iconType": "material-icons-outlined",
+      "icon": "menu_book",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/leave-request",
+      "title": "MENUITEMS.TEACHER.LIST.LEAVE-REQUEST",
+      "iconType": "material-icons-outlined",
+      "icon": "offline_pin",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/exam-schedule",
+      "title": "MENUITEMS.TEACHER.LIST.EXAM-SCHEDULE",
+      "iconType": "material-icons-outlined",
+      "icon": "history_edu",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/settings",
+      "title": "MENUITEMS.TEACHER.LIST.SETTINGS",
+      "iconType": "material-icons-outlined",
+      "icon": "settings",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+
+    {
+      "path": "/student/dashboard",
+      "title": "MENUITEMS.STUDENT.LIST.DASHBOARD",
+      "iconType": "material-icons-outlined",
+      "icon": "space_dashboard",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/homework",
+      "title": "MENUITEMS.STUDENT.LIST.HOMEWORK",
+      "iconType": "material-icons-outlined",
+      "icon": "article",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/leave-request",
+      "title": "MENUITEMS.STUDENT.LIST.LEAVE-REQUEST",
+      "iconType": "material-icons-outlined",
+      "icon": "offline_pin",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/timetable",
+      "title": "MENUITEMS.STUDENT.LIST.TIME-TABLE",
+      "iconType": "material-icons-outlined",
+      "icon": "table_chart",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/settings",
+      "title": "MENUITEMS.STUDENT.LIST.SETTINGS",
+      "iconType": "material-icons-outlined",
+      "icon": "settings",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+
+    {
+      "path": "",
+      "title": "MENUITEMS.APPS.TEXT",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": true,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["All"],
+      "submenu": []
+    },
+    {
+      "path": "calendar",
+      "title": "MENUITEMS.CALENDAR.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "event_note",
+      "class": "",
+      "groupTitle": false,
+      "badge": "New",
+      "badgeClass": "badge bg-blue sidebar-badge float-end",
+      "role": ["All"],
+      "submenu": []
+    },
+    {
+      "path": "",
+      "title": "Authentication",
+      "iconType": "material-icons-outlined",
+      "icon": "supervised_user_circle",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/authentication/signin",
+          "title": "Sign In",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/authentication/signup",
+          "title": "Sign Up",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/authentication/forgot-password",
+          "title": "Forgot Password",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/authentication/locked",
+          "title": "Locked",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/authentication/page404",
+          "title": "404 - Not Found",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/authentication/page500",
+          "title": "500 - Server Error",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    }
+  ]
+}
