@@ -48,16 +48,15 @@
     "fACULTY": {
       "TEXT": "Faculty",
       "LIST": {
-        "ADD-FACULTY-MEMBER": "Add Faculty Member",
-        "FACULTY-DIRECTORY": "Faculty Directory"
+        "ADD-FACULTY": "Add Faculty",
+        "ALL-FACULTY": "All Faculty"
       }
     },
     "STUDENTS": {
       "TEXT": "Students",
       "LIST": {
-        "STUDENT-COUNCIL": "Student Council",
-        "STUDENT-ACHIEVEMENTS": "Student Achievements",
-        "STUDENT-GRIEVANCES": "Student Grievances"
+        "ADD-STUDENT": "Add Student",
+        "ALL-STUDENT": "All Student"
       }
     },
     "ADMINISTRATION": {
