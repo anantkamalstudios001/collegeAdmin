@@ -261,7 +261,7 @@
     },
     {
       "path": "",
-      "title": "MENUITEMS.ADMINISTRATION.TEXT",
+      "title": "MENUITEMS.STAFF-USERS.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "business",
       "class": "menu-toggle",
@@ -271,8 +271,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/adminstration/administrative-staff",
-          "title": "MENUITEMS.ADMINISTRATION.LIST.ADMINISTRATIVE-STAFF",
+          "path": "/admin/staff-users/add staff",
+          "title": "MENUITEMS.STAFF-USERS.LIST.ADD-STAFF",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -283,8 +283,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/adminstration/office-bearers",
-          "title": "MENUITEMS.ADMINISTRATION.LIST.OFFICE-BEARERS",
+          "path": "/admin/staff-users/all-staff",
+          "title": "MENUITEMS.STAFF-USERS.LIST.ALL-STAFF",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -320,20 +320,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/admission/apply-now-form-setup",
-          "title": "MENUITEMS.ADMISSION.LIST.APPLY-NOW-FORM-SETUP",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/admission/fee-structure",
-          "title": "MENUITEMS.ADMISSION.LIST.FEE-STRUCTURE",
+          "path": "/admin/admission/new-admission",
+          "title": "MENUITEMS.ADMISSION.LIST.NEW-ADMISSION",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -495,34 +483,6 @@
     ]
   },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       "path": "",
       "title": "MENUITEMS.DOWNLOADS.TEXT",
@@ -535,8 +495,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/downloads/forms",
-          "title": "MENUITEMS.DOWNLOADS.LIST.FORMS",
+          "path": "/admin/downloads/image-gallary",
+          "title": "MENUITEMS.DOWNLOADS.LIST.IMAGE-GALLARY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -547,8 +507,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/downloads/brochures",
-          "title": "MENUITEMS.DOWNLOADS.LIST.BROCHURES",
+          "path": "/admin/downloads/video-gallary",
+          "title": "MENUITEMS.DOWNLOADS.LIST.VIDEO-GALLARY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -559,8 +519,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/downloads/circulars",
-          "title": "MENUITEMS.DOWNLOADS.LIST.CIRCULARS",
+          "path": "/admin/downloads/category",
+          "title": "MENUITEMS.DOWNLOADS.LIST.CATEGORY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -572,16 +532,6 @@
         }
       ]
     },
-
-
-
-
-
-
-
-
-
-
 
     {
       "path": "",
@@ -705,127 +655,21 @@
           "badgeClass": "",
           "role": [""],
           "submenu": []
+        },
+        {
+          "path": "/admin/contact/feedback-inbox",
+          "title": "MENUITEMS.CONTACT.LIST.FEEDBACK-INBOX",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
         }
       ]
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
     {

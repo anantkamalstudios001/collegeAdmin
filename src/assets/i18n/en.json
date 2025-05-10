@@ -59,19 +59,18 @@
         "ALL-STUDENT": "All Student"
       }
     },
-    "ADMINISTRATION": {
-      "TEXT": "Administration",
+    "STAFF-USERS": {
+      "TEXT": "Staff Users",
       "LIST": {
-        "ADMINISTRATIVE-STAFF": "Administrative Staff",
-        "OFFICE-BEARERS": "Office Bearers"
+        "ADD-STAFF": "Add Staff",
+        "ALL-STAFF": "All Staff"
       }
     },
     "ADMISSION": {
       "TEXT": "Admissions",
       "LIST": {
         "ADMISSION-GUIDELINES": "Admission Guidelines",
-        "APPLY-NOW-FORM-SETUP": "Apply Now Form Setup",
-        "FEE-STRUCTURE": "Fee Structure"
+        "NEW-ADMISSION": "New Admission"
       }
     },
     "PLACEMENTS": {
@@ -101,20 +100,12 @@
       }
     },
 
-
-
-
-
-
-
-
-
     "DOWNLOADS": {
       "TEXT": "Downloads",
       "LIST": {
-        "FORMS": "Forms",
-        "BROCHURES": "Brochures",
-        "CIRCULARS": "Circulars"
+        "IMAGE-GALLARY": "Image Gallary",
+        "VIDEO-GALLARY": "Video Gallary",
+        "CATEGORY": "Category"
       }
     },
     "ALUMNI": { 
@@ -136,35 +127,11 @@
     "CONTACT": {
       "TEXT": "Contact",
           "LIST": {
-        "MAP-LOCATION": "Map Location"
+        "COLLEGE-CONTACT-INFO": "College Contact Info",
+        "MAP-LOCATION": "Map Location",
+        "FEEDBACK-INBOX": "Feedback Inbox"
       }
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     "TEACHER": {
       "TEXT": "Teacher",
