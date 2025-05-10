@@ -2,19 +2,6 @@
   "routes": [
     {
       "path": "",
-      "title": "MENUITEMS.MAIN.TEXT",
-      "iconType": "",
-      "icon": "",
-      "class": "",
-      "groupTitle": true,
-      "badge": "",
-      "badgeClass": "",
-      "role": ["All"],
-      "submenu": []
-    },
-
-    {
-      "path": "",
       "title": "MENUITEMS.HOME.TEXT",
       "iconType": "material-icons-outlined",
       "icon": "display_settings",
@@ -972,19 +959,6 @@
       "badge": "",
       "badgeClass": "",
       "role": ["Student"],
-      "submenu": []
-    },
-
-    {
-      "path": "",
-      "title": "MENUITEMS.APPS.TEXT",
-      "iconType": "",
-      "icon": "",
-      "class": "",
-      "groupTitle": true,
-      "badge": "",
-      "badgeClass": "",
-      "role": ["All"],
       "submenu": []
     },
     {
