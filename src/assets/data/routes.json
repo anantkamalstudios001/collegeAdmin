@@ -171,7 +171,44 @@
           "badge": "",
           "badgeClass": "",
           "role": [""],
-          "submenu": []
+          "submenu": [
+             {
+              "path": "/admin/academics/add-courses",
+              "title": "MENUITEMS.ACADEMICS.LIST.SUBLIST.ADD-COURSES",
+              "iconType": "",
+              "icon": "",
+              "class": "",
+              "groupTitle": false,
+              "badge": "",
+              "badgeClass": "",
+              "role": [""],
+              "submenu": []
+            },
+             {
+              "path": "/admin/academics/all-courses",
+              "title": "MENUITEMS.ACADEMICS.LIST.SUBLIST.ALL-COURSES",
+              "iconType": "",
+              "icon": "",
+              "class": "",
+              "groupTitle": false,
+              "badge": "",
+              "badgeClass": "",
+              "role": [""],
+              "submenu": []
+            },
+             {
+              "path": "/admin/academics/category",
+              "title": "MENUITEMS.ACADEMICS.LIST.SUBLIST.CATEGORY",
+              "iconType": "",
+              "icon": "",
+              "class": "",
+              "groupTitle": false,
+              "badge": "",
+              "badgeClass": "",
+              "role": [""],
+              "submenu": []
+            }  
+          ]
         },
         {
           "path": "/admin/academics/departments",

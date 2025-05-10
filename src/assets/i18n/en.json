@@ -41,6 +41,11 @@
       "TEXT": "Academics",
       "LIST": {
         "COURSES": "Courses",
+          "SUBLIST": {
+        "ADD-COURSES": "Add Courses",
+        "ALL-COURSES": "All Courses",
+        "CATEGORY": "Category"
+      },
         "DEPARTMENTS": "Departments",
         "ACADEMIC-CALENDER": "Academic Calendar"
       }
