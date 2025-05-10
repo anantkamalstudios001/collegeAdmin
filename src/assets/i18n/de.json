@@ -147,6 +147,9 @@
         "SETTINGS": "Einstellungen"
       }
     },
+    "APPS": {
+      "TEXT": "Apps"
+    },
     "CALENDAR": {
       "TEXT": "Kalender"
     },

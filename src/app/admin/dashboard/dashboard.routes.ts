@@ -7,13 +7,18 @@ import { Page404Component } from 'app/authentication/page404/page404.component';
 import { QuickStatsComponent } from './quick-stats/quick-stats.component';
 import { RecentUpdatesComponent } from './recent-updates/recent-updates.component';
 import { MajorSectionsComponent } from './major-sections/major-sections.component';
+import { DemoPageComponent } from './demo-page/demo-page.component';
 export const DASHBOARD_ROUTE: Route[] = [
   {
     path: '',
     redirectTo: 'main',
     pathMatch: 'full',
   },
-    {
+  {
+    path : 'demo-page',
+    component : DemoPageComponent
+  },
+  {
     path: 'quick-stats',
     component: QuickStatsComponent,
   },

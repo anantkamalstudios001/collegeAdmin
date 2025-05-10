@@ -41,6 +41,11 @@
       "TEXT": "Academics",
       "LIST": {
         "COURSES": "Courses",
+          "SUBLIST": {
+        "ADD-COURSES": "Add Courses",
+        "ALL-COURSES": "All Courses",
+        "CATEGORY": "Category"
+      },
         "DEPARTMENTS": "Departments",
         "ACADEMIC-CALENDER": "Academic Calendar"
       }
@@ -128,8 +133,7 @@
       "TEXT": "Contact",
           "LIST": {
         "COLLEGE-CONTACT-INFO": "College Contact Info",
-        "MAP-LOCATION": "Map Location",
-        "FEEDBACK-INBOX": "Feedback Inbox"
+        "FEEDBACK-INFO": "Feedback Info"
       }
     },
 
@@ -152,6 +156,9 @@
         "TIME-TABLE": "Time Table",
         "SETTINGS": "Settings"
       }
+    },
+    "APPS": {
+      "TEXT": "Apps"
     },
     "CALENDAR": {
       "TEXT": "Calendar"
