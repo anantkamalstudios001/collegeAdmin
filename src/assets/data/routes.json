@@ -211,8 +211,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/faculty/add-faculty-member",
-          "title": "MENUITEMS.fACULTY.LIST.ADD-FACULTY-MEMBER",
+          "path": "/admin/faculty/add-faculty",
+          "title": "MENUITEMS.fACULTY.LIST.ADD-FACULTY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -224,8 +224,8 @@
         },
         
         {
-          "path": "/admin/faculty/faculty-directory",
-          "title": "MENUITEMS.fACULTY.LIST.FACULTY-DIRECTORY",
+          "path": "/admin/faculty/all-faculty",
+          "title": "MENUITEMS.fACULTY.LIST.ALL-FACULTY",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -249,8 +249,8 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/students/student-council",
-          "title": "MENUITEMS.STUDENTS.LIST.STUDENT-COUNCIL",
+          "path": "/admin/students/add-student",
+          "title": "MENUITEMS.STUDENTS.LIST.ADD-STUDENT",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -261,20 +261,8 @@
           "submenu": []
         },
         {
-          "path": "/admin/students/student-achievements",
-          "title": "MENUITEMS.STUDENTS.LIST.STUDENT-ACHIEVEMENTS",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/students/student-grievances",
-          "title": "MENUITEMS.STUDENTS.LIST.STUDENT-GRIEVANCES",
+          "path": "/admin/students/all-student",
+          "title": "MENUITEMS.STUDENTS.LIST.ALL-STUDENT",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
