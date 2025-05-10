@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardCompComponent } from './dashboard-comp.component';
+import { WelcomeMessageComponent } from './welcome-message.component';
 
-describe('DashboardCompComponent', () => {
-  let component: DashboardCompComponent;
-  let fixture: ComponentFixture<DashboardCompComponent>;
+describe('WelcomeMessageComponent', () => {
+  let component: WelcomeMessageComponent;
+  let fixture: ComponentFixture<WelcomeMessageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DashboardCompComponent]
+      imports: [WelcomeMessageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DashboardCompComponent);
+    fixture = TestBed.createComponent(WelcomeMessageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -7,15 +7,16 @@ import { SliderManagementComponent } from '../front-office/slider-management/sli
 import { EventsHighlightEditorComponent } from '../front-office/events-highlight-editor/events-highlight-editor.component';
 import { AdmissionStatusToggleComponent } from '../front-office/admission-status-toggle/admission-status-toggle.component';
 import { AnnouncementManagementComponent } from '../front-office/announcement-management/announcement-management.component';
+import { WelcomeMessageComponent } from '../front-office/welcome-message/welcome-message.component';
 
 export const FROUNT_OFFICE_ROUTE: Route[] = [
   {
-    path: 'slider-management',
+    path: 'banner-management',
     component: SliderManagementComponent,
   },
   {
-    path: 'events-highlight-editor',
-    component: EventsHighlightEditorComponent,
+    path: 'welcome-message',
+    component: WelcomeMessageComponent,
   },
   {
     path: 'announcement-management',
