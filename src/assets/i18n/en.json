@@ -138,9 +138,7 @@
     "CONTACT": {
       "TEXT": "Contact",
           "LIST": {
-        "COLLEGE-CONTACT-INFO": "College Contact Info",
-        "MAP-LOCATION": "Map Location",
-        "FEEDBACK-INBOX": "Feedback Inbox"
+        "MAP-LOCATION": "Map Location"
       }
     },
 
@@ -189,9 +187,6 @@
         "TIME-TABLE": "Time Table",
         "SETTINGS": "Settings"
       }
-    },
-    "APPS": {
-      "TEXT": "Apps"
     },
     "CALENDAR": {
       "TEXT": "Calendar"

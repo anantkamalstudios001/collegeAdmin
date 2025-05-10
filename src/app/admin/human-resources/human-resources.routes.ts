@@ -13,22 +13,11 @@ import { FooterNavigationComponent } from './footer-navigation/footer-navigation
 import { CollegeAddressEditorComponent } from './college-address-editor/college-address-editor.component';
 import { HelplineNumbersEditorComponent } from './helpline-numbers-editor/helpline-numbers-editor.component';
 import { PrivacyDesclaimerEditorComponent } from './privacy-desclaimer-editor/privacy-desclaimer-editor.component';
+import { MapLocationComponent } from './map-location/map-location.component';
 export const HR_ROUTE: Route[] = [
   {
-    path: 'footer-navigation',
-    component: FooterNavigationComponent,
-  },
-  {
-    path: 'college-address-editor',
-    component: CollegeAddressEditorComponent,
-  },
-  {
-    path: 'helpline-numbers-editor',
-    component: HelplineNumbersEditorComponent,
-  },
-  {
-    path: 'privacy-desclaimer-editor',
-    component: PrivacyDesclaimerEditorComponent,
+    path: 'map-location',
+    component: MapLocationComponent,
   },
   { path: '**', component: Page404Component },
 ];
