@@ -1,3 +1,4 @@
+
 import { Route } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';

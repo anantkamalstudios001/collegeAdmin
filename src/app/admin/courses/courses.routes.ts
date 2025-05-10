@@ -12,40 +12,18 @@ import { LibraryManagerComponent } from './library-manager/library-manager.compo
 import { FacilitiesManagementComponent } from './facilities-management/facilities-management.component';
 import { GrievanceRedressalComponent } from './grievance-redressal/grievance-redressal.component';
 import { AcadamicCalenderComponent } from './acadamic-calender/acadamic-calender.component';
+import { AddFacultyComponent } from './add-faculty/add-faculty.component';
+import { AllFacultyComponent } from './all-faculty/all-faculty.component';
 
 export const COURSE_ROUTE: Route[] = [
   {
-    path: 'admission-section',
-    component: AdmissionSectionComponent,
+    path: 'add-faculty',
+    component: AddFacultyComponent,
   },
   {
-    path: 'scholarship-section',
-    component: ScholarshipSectionComponent,
+    path: 'all-faculty',
+    component: AllFacultyComponent,
   },
-  {
-    path: 'fee-structure',
-    component: FeeStructureComponent,
-  },
-  {
-    path: 'download-manager',
-    component: DownloadManagerComponent,
-  },
-
-  {
-    path: 'library-manager',
-    component: LibraryManagerComponent,
-  },
-  {
-    path: 'facilities-management',
-    component: FacilitiesManagementComponent,
-  },
-  {
-    path: 'grievance-redressal',
-    component: GrievanceRedressalComponent,
-  },
-  {
-    path: 'acadamic-calender',
-    component: AcadamicCalenderComponent,
-  },
+  
   { path: '**', component: Page404Component },
 ];

@@ -13,22 +13,21 @@ import { FooterNavigationComponent } from './footer-navigation/footer-navigation
 import { CollegeAddressEditorComponent } from './college-address-editor/college-address-editor.component';
 import { HelplineNumbersEditorComponent } from './helpline-numbers-editor/helpline-numbers-editor.component';
 import { PrivacyDesclaimerEditorComponent } from './privacy-desclaimer-editor/privacy-desclaimer-editor.component';
+import { RegisterAlumniComponent } from './register-alumni/register-alumni.component';
+import { AlumniStoriesComponent } from './alumni-stories/alumni-stories.component';
+import { AlumniMeetsComponent } from './alumni-meets/alumni-meets.component';
 export const HR_ROUTE: Route[] = [
   {
-    path: 'footer-navigation',
-    component: FooterNavigationComponent,
+    path: 'register-alumni',
+    component: RegisterAlumniComponent,
   },
   {
-    path: 'college-address-editor',
-    component: CollegeAddressEditorComponent,
+    path: 'alumni-stories',
+    component: AlumniStoriesComponent,
   },
   {
-    path: 'helpline-numbers-editor',
-    component: HelplineNumbersEditorComponent,
-  },
-  {
-    path: 'privacy-desclaimer-editor',
-    component: PrivacyDesclaimerEditorComponent,
+    path: 'alumni-meets',
+    component: AlumniMeetsComponent,
   },
   { path: '**', component: Page404Component },
 ];
