@@ -7,7 +7,6 @@ import { Page404Component } from 'app/authentication/page404/page404.component';
 import { QuickStatsComponent } from './quick-stats/quick-stats.component';
 import { RecentUpdatesComponent } from './recent-updates/recent-updates.component';
 import { MajorSectionsComponent } from './major-sections/major-sections.component';
-import { DashboardCompComponent } from './dashboard-comp/dashboard-comp.component';
 export const DASHBOARD_ROUTE: Route[] = [
   {
     path: '',
@@ -25,11 +24,10 @@ export const DASHBOARD_ROUTE: Route[] = [
   {
     path: 'major-sections',
     component: MajorSectionsComponent,
-  },  
-  {
-    path: 'main',
-    component: DashboardCompComponent,
   },
+  
+
+  
   // {
   //   path: 'main',
   //   component: MainComponent,

@@ -11,27 +11,12 @@ import { PresidentsDeskMessageEditorComponent } from './presidents-desk-message-
 import { PrincipalsDeskMessageEditorComponent } from './principals-desk-message-editor/principals-desk-message-editor.component';
 import { LocalCommitteeManagementComponent } from './local-committee-management/local-committee-management.component';
 import { CollegeCommitteesManagerComponent } from './college-committees-manager/college-committees-manager.component';
+import { VisionMissionComponent } from './vision-mission/vision-mission.component';
 
 export const ADMIN_TEACHER_ROUTE: Route[] = [
   {
-    path: 'edit-board-of-members',
-    component: EditBoardOfMembersComponent,
-  },
-  {
-    path: 'presidents-desk-message-editor',
-    component: PresidentsDeskMessageEditorComponent,
-  },
-  {
-    path: 'principals-desk-message-editor',
-    component: PrincipalsDeskMessageEditorComponent,
-  },
-  {
-    path: 'local-committee-management',
-    component: LocalCommitteeManagementComponent,
-  },
-  {
-    path: 'college-committees-manager',
-    component: CollegeCommitteesManagerComponent,
+    path: 'vision-mission',
+    component: VisionMissionComponent,
   },
   { path: '**', component: Page404Component },
 ];

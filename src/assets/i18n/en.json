@@ -3,9 +3,6 @@
     "TITLE": "Welcome to Smart"
   },
   "MENUITEMS": {
-    "MAIN": {
-      "TEXT": "Main"
-    },
     "FROUNT-OFFICE": {
       "TEXT": "Frount Office",
       "LIST": {
@@ -15,12 +12,7 @@
       }
     },
     "DASHBOARD": {
-      "TEXT": "Dashboard",
-      "LIST": {
-        "QUICK-STATS": "Quick stats",
-        "RECENT-UPDATES": "Recent Updates (News, Addmission)",
-        "MAJOR-SECTIONS": "Shortcut to Major Section"
-      }
+      "TEXT": "Dashboard"
     },
     "HOME": {
       "TEXT": "Home",
@@ -38,6 +30,13 @@
         "GOVERNING-BODY": "Governing Body"
       }
     },
+    "USER-MANAGE": {
+      "TEXT": "User Manage",
+      "LIST": {
+        "ALL-USER": "All User",
+        "ADD-NEW-USER": "Add New User"
+      }
+    },
     "ACADEMICS": {
       "TEXT": "Academics",
       "LIST": {
@@ -47,7 +46,7 @@
       }
     },
     "fACULTY": {
-      "TEXT": "faculty",
+      "TEXT": "Faculty",
       "LIST": {
         "ADD-FACULTY-MEMBER": "Add Faculty Member",
         "FACULTY-DIRECTORY": "Faculty Directory"
