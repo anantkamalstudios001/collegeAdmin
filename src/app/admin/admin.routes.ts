@@ -22,58 +22,69 @@ export const ADMIN_ROUTE: Route[] = [
       ),
   },
   {
-    path: 'departments-management',
+    path: 'user-manage',
     loadChildren: () =>
       import('./students/admin-students.routes').then(
         (m) => m.ADMIN_STUDENT_ROUTE
       ),
   },
   {
-    path: 'student-section',
+    path: 'faculty',
     loadChildren: () =>
       import('./courses/courses.routes').then((m) => m.COURSE_ROUTE),
   },
   {
-    path: 'placement-cell',
+    path: 'students',
     loadChildren: () =>
       import('./library/library.routes').then((m) => m.LIBRARY_ROUTE),
   },
   {
-    path: 'naac-accreditation',
+    path: 'staff-users',
     loadChildren: () =>
       import('./departments/departments.routes').then(
         (m) => m.DEPARTMENT_ROUTE
       ),
   },
   {
-    path: 'rti-section',
+    path: 'admission',
     loadChildren: () =>
       import('./staff/staff.routes').then((m) => m.STAFF_ROUTE),
   },
   {
-    path: 'gallery-management',
+    path: 'placements',
     loadChildren: () =>
       import('./holidays/holidays.routes').then((m) => m.HOLIDAY_ROUTE),
   },
   {
-    path: 'news-updates',
+    path: 'e-resources',
     loadChildren: () => import('./fees/fees.routes').then((m) => m.FEES_ROUTE),
   },
   {
-    path: 'contact-page',
+    path: 'campus-life',
     loadChildren: () =>
       import('./hostel/hostel.routes').then((m) => m.HOSTEL_ROUTE),
   },
   {
-    path: 'footer-links-editor',
+    path: 'downloads',
     loadChildren: () =>
       import('./class/class.routes').then((m) => m.CLASS_ROUTE),
   },
   {
-    path: 'footer-link-editor',
+    path: 'alumni',
     loadChildren: () =>
       import('./human-resources/human-resources.routes').then(
         (m) => m.HR_ROUTE
+      ),
+  },
+  {
+    path: 'notices',
+    loadChildren: () => import('./notices/notices.routes').then((m) => m.NOTICES_ROUTES),
+  },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact/contact.routes').then(
+        (m) => m.CONTACT_ROUTES
       ),
   },
   { path: '**', component: Page404Component },

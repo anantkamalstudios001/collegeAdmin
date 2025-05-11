@@ -323,7 +323,7 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/staff-users/add staff",
+          "path": "/admin/staff-users/add-staff",
           "title": "MENUITEMS.STAFF-USERS.LIST.ADD-STAFF",
           "iconType": "",
           "icon": "",

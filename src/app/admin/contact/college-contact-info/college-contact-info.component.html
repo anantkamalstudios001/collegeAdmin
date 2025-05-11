@@ -1,0 +1,74 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+        <form [formGroup]="collegeContactForm" (ngSubmit)="onSubmit()" class="container py-4">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label for="collegeName" class="form-label">College Name</label>
+      <input type="text" class="form-control" id="collegeName" formControlName="collegeName">
+    </div>
+
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+
+    <div class="col-md-6">
+      <label for="phone" class="form-label">Phone</label>
+      <input type="tel" class="form-control" id="phone" formControlName="phone">
+    </div>
+
+    <div class="col-md-6">
+      <label for="altPhone" class="form-label">Alternate Phone</label>
+      <input type="tel" class="form-control" id="altPhone" formControlName="altPhone">
+    </div>
+
+    <div class="col-md-6">
+      <label for="website" class="form-label">Website</label>
+      <input type="url" class="form-control" id="website" formControlName="website">
+    </div>
+
+    <div class="col-12">
+      <label for="address" class="form-label">Address</label>
+      <textarea class="form-control" id="address" rows="2" formControlName="address"></textarea>
+    </div>
+
+    <div class="col-md-4">
+      <label for="city" class="form-label">City</label>
+      <input type="text" class="form-control" id="city" formControlName="city">
+    </div>
+
+    <div class="col-md-4">
+      <label for="state" class="form-label">State</label>
+      <input type="text" class="form-control" id="state" formControlName="state">
+    </div>
+
+    <div class="col-md-4">
+      <label for="zip" class="form-label">Zip Code</label>
+      <input type="text" class="form-control" id="zip" formControlName="zip">
+    </div>
+
+    <div class="col-md-6">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" class="form-control" id="country" formControlName="country">
+    </div>
+
+    <div class="col-md-6">
+      <label for="mapLocation" class="form-label">Map Location URL</label>
+      <input type="url" class="form-control" id="mapLocation" formControlName="mapLocation">
+    </div>
+
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-primary" [disabled]="collegeContactForm.invalid">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+    </div>
+    </section>
+
+
+
+
+
+

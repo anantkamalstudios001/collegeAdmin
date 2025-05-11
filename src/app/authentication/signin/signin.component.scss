@@ -7,10 +7,6 @@
     )
   );
 }
-.left-img{
-  height: 200px;
-  width: 200px;
-}
 :host ::ng-deep .btnStyle2 {
   @include mat.button-overrides(
     (
@@ -27,4 +23,9 @@
       filled-label-text-color: #ffffff,
     )
   );
+}
+.left-img {
+  // height: 200px;
+  // width: 200px;
+  
 }

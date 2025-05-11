@@ -11,31 +11,17 @@ import { CivilEngineeringComponent } from './civil-engineering/civil-engineering
 import { ElectricalEngineeringComponent } from './electrical-engineering/electrical-engineering.component';
 import { FirstYearEngineeringComponent } from './first-year-engineering/first-year-engineering.component';
 import { MbaProgramComponent } from './mba-program/mba-program.component';
+import { AllUserComponent } from './all-user/all-user.component';
+import { AddNewUserComponent } from './add-new-user/add-new-user.component';
 
 export const ADMIN_STUDENT_ROUTE: Route[] = [
   {
-    path: 'machanical-engineering',
-    component: MachanicalEngineeringComponent,
+    path: 'all-user',
+    component: AllUserComponent,
   },
   {
-    path: 'computer-engineering',
-    component: ComputerEngineeringComponent,
-  },
-  {
-    path: 'civil-engineering',
-    component: CivilEngineeringComponent,
-  },
-  {
-    path: 'electrical-engineering',
-    component: ElectricalEngineeringComponent,
-  },
-  {
-    path: 'first-year-engineering',
-    component: FirstYearEngineeringComponent,
-  },
-  {
-    path: 'mba-program',
-    component: MbaProgramComponent,
+    path: 'add-new-user',
+    component: AddNewUserComponent,
   },
   { path: '**', component: Page404Component },
 ];

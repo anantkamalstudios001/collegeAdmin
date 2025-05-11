@@ -9,27 +9,18 @@ import { PlacementActivitiesManagerComponent } from './placement-activities-mana
 import { RecruitersListManagerComponent } from './recruiters-list-manager/recruiters-list-manager.component';
 import { PlacementStatisticsComponent } from './placement-statistics/placement-statistics.component';
 import { PlacementOficersMessageEditorComponent } from './placement-oficers-message-editor/placement-oficers-message-editor.component';
+import { AddStudentComponent } from '../students/add-student/add-student.component';
+import { AllStudentComponent } from './all-student/all-student.component';
 
 export const LIBRARY_ROUTE: Route[] = [
   {
-    path: 'about-placement-department-editor',
-    component: AboutPlacementDepartmentEditorComponent,
+    path: 'add-student',
+    component: AddStudentComponent,
   },
   {
-    path: 'placement-activities-manager',
-    component: PlacementActivitiesManagerComponent,
+    path: 'all-student',
+    component: AllStudentComponent,
   },
-  {
-    path: 'recruiters-list-manager',
-    component: RecruitersListManagerComponent,
-  },
-  {
-    path: 'placement-statistics',
-    component: PlacementStatisticsComponent,
-  },
-  {
-    path: 'placement-oficers-message-editor',
-    component: PlacementOficersMessageEditorComponent,
-  },
+  
   { path: '**', component: Page404Component },
 ];

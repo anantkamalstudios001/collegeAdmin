@@ -10,35 +10,18 @@ import { FeedbackFormsComponent } from './feedback-forms/feedback-forms.componen
 import { NaacSsrDocumentsManagerComponent } from './naac-ssr-documents-manager/naac-ssr-documents-manager.component';
 import { NaacDocumentsUploadComponent } from './naac-documents-upload/naac-documents-upload.component';
 import { AqarReportsSupportingDocumentsUploadComponent } from './aqar-reports-supporting-documents-upload/aqar-reports-supporting-documents-upload.component';
+import { AddStaffComponent } from '../staff/add-staff/add-staff.component';
+import { AllstaffComponent } from '../staff/all-staff/all-staff.component';
 
 export const DEPARTMENT_ROUTE: Route[] = [
   {
-    path: 'iiqa-upload-editor',
-    component:IiqaUploadEditorComponent,
+    path: 'add-staff',
+    component: AddStaffComponent,
   },
   {
-    path: 'iqac-members-activities-manager',
-    component:IqacMembersActivitiesManagerComponent,
+    path: 'all-staff',
+    component:AllstaffComponent,
   },
-  {
-    path: 'best-practices-editor',
-    component:BestPracticesEditorComponent,
-  },
-  {
-    path: 'feedback-forms',
-    component:FeedbackFormsComponent,
-  },
-  {
-    path: 'naac-ssr-documents-manager',
-    component:NaacSsrDocumentsManagerComponent,
-  },
-  {
-    path: 'naac-documents-upload',
-    component:NaacDocumentsUploadComponent,
-  },
-  {
-    path: 'aqar-reports-supporting-documents-upload',
-    component:AqarReportsSupportingDocumentsUploadComponent,
-  },
+  
   { path: '**', component: Page404Component },
 ];

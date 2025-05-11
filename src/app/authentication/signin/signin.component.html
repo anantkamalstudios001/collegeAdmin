@@ -1,15 +1,15 @@
 <div class="auth-container">
   <div class="row auth-main">
-    <div class="col-sm-6 px-0 d-none d-sm-block">
-      <div class="left-img" style="background-image: url(assets/images/pages/signup-login-image.png);">
+    <!-- <div class="col-sm-6 px-0 d-none d-sm-block">
+      <div class="left-img" style="background-image: url(assets/images/pages/bg-01.jpg);">
       </div>
-    </div>
+    </div> -->
+    <div class="col-sm-6 px-0 d-none d-sm-block">
+  <div class="left-img"></div>
+</div>
     <div class="col-sm-6 auth-form-section">
       <div class="form-section">
         <div class="auth-wrapper">
-          <p class="auth-signup-text text-muted">Need an account?<a routerLink="/authentication/signup"
-              class="sign-up-link">Sign Up
-            </a></p>
           <div class="d-flex justify-content-between lbl-alert mb-3">
             <div>
               <button mat-flat-button class="btnStyle1" (click)="adminSet();">Admin</button>
@@ -71,6 +71,11 @@
                 <button mat-flat-button color="accent" [class.auth-spinner]="loading" [disabled]="loading"
                   class="auth-form-btn" [disabled]="!authForm.valid " type="submit">Login</button>
               </div>
+            </div>
+
+            <div>
+              <p class="auth-signup-text text-muted pt-3">Need an account?<a routerLink="/authentication/signup"
+              class="sign-up-link">Sign Up</a></p>
             </div>
           </form>
           <h6 class="social-login-title">OR</h6>
