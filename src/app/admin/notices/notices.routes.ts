@@ -4,19 +4,22 @@ import { Page404Component } from '../../authentication/page404/page404.component
 import { ContactInformationEditorComponent } from '../hostel/contact-information-editor/contact-information-editor.component';
 import { ContactFormSubmissionViewerComponent } from './contact-form-submission-viewer/contact-form-submission-viewer.component';
 import { CampusMapEmbedEditorComponent } from './campus-map-embed-editor/campus-map-embed-editor.component';
+import { AddNoticeComponent } from './add-notice/add-notice.component';
+import { ViewNoticesComponent } from './view-notices/view-notices.component';
+import { ExpiredNoticesComponent } from './expired-notices/expired-notices.component';
 
 export const NOTICES_ROUTES: Route[] = [
   {
-    path: 'contact-information-editor',
-    component: ContactInformationEditorComponent,
+    path: 'add-notice',
+    component: AddNoticeComponent,
   },
   {
-    path: 'contact-form-submission-viewer',
-    component: ContactFormSubmissionViewerComponent,
+    path: 'view-notices',
+    component: ViewNoticesComponent,
   },
   {
-    path: 'campus-map-embed-editor',
-    component: CampusMapEmbedEditorComponent,
+    path: 'expired-notices',
+    component: ExpiredNoticesComponent,
   },
   { path: '**', component: Page404Component },
 ];
