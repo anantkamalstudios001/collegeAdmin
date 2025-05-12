@@ -138,7 +138,8 @@ export class HeaderComponent
     this.docElement = document.documentElement;
 
     if (userRole === Role.Admin) {
-      this.homePage = 'admin/dashboard/main';
+      // this.homePage = 'admin/dashboard/main';
+      this.homePage = 'admin/dashboard/demo-page';
     } else if (userRole === Role.Teacher) {
       this.homePage = 'teacher/dashboard';
     } else if (userRole === Role.Student) {

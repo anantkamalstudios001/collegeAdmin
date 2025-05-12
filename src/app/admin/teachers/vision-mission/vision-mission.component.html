@@ -1,1 +1,51 @@
-<p>vision-mission works!</p>
+<section class="content">
+  <div class="content-block">
+
+    @for (breadcrumb of breadscrumbs; track breadcrumb) {
+      <div class="block-header">
+        <app-breadcrumb 
+          [title]="breadcrumb.title"
+          [items]="breadcrumb.items"
+          [active_item]="breadcrumb.active">
+        </app-breadcrumb>
+      </div>
+    }
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="mt-4">
+      <h4>Vision</h4>
+      <div formArrayName="vision">
+        <div *ngFor="let para of vision.controls; let i = index" [formGroupName]="i">
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>Vision Paragraph {{ i + 1 }}</mat-label>
+            <textarea matInput formControlName="text" rows="3"></textarea>
+            <mat-error *ngIf="para.get('text')?.invalid">This paragraph is required</mat-error>
+          </mat-form-field>
+          <button mat-icon-button color="warn" type="button" (click)="removeParagraph('vision', i)" *ngIf="vision.length > 1">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+      <button mat-button color="primary" type="button" (click)="addParagraph('vision')">+ Add Vision Paragraph</button>
+
+      <h4 class="mt-4">Mission</h4>
+      <div formArrayName="mission">
+        <div *ngFor="let para of mission.controls; let i = index" [formGroupName]="i">
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>Mission Paragraph {{ i + 1 }}</mat-label>
+            <textarea matInput formControlName="text" rows="3"></textarea>
+            <mat-error *ngIf="para.get('text')?.invalid">This paragraph is required</mat-error>
+          </mat-form-field>
+          <button mat-icon-button color="warn" type="button" (click)="removeParagraph('mission', i)" *ngIf="mission.length > 1">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+      <button mat-button color="primary" type="button" (click)="addParagraph('mission')">+ Add Mission Paragraph</button>
+
+      <div class="mt-4">
+        <button mat-raised-button color="accent" type="submit">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</section>

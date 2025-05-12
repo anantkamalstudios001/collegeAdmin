@@ -30,9 +30,9 @@ export class NewAdmissionComponent {
    staffForm: UntypedFormGroup;
   breadscrums = [
     {
-      title: 'Add Staff',
-      items: ['Staff'],
-      active: 'Add Staff',
+      title: 'New Admission',
+      items: ['Admissions'],
+      active: 'New Admission',
     },
   ];
   constructor(private fb: UntypedFormBuilder) {
