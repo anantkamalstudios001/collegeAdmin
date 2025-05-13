@@ -12,11 +12,26 @@ import { PrincipalsDeskMessageEditorComponent } from './principals-desk-message-
 import { LocalCommitteeManagementComponent } from './local-committee-management/local-committee-management.component';
 import { CollegeCommitteesManagerComponent } from './college-committees-manager/college-committees-manager.component';
 import { VisionMissionComponent } from './vision-mission/vision-mission.component';
+import { PrincipalMessageComponent } from './principal-message/principal-message.component';
+import { CollegeHistoryComponent } from './college-history/college-history.component';
+import { GoverningBodyComponent } from './governing-body/governing-body.component';
 
 export const ADMIN_TEACHER_ROUTE: Route[] = [
   {
     path: 'vision-mission',
     component: VisionMissionComponent,
+  },
+  {
+    path: 'principals-message',
+    component: PrincipalMessageComponent,
+  },
+  {
+    path: 'college-history',
+    component: CollegeHistoryComponent,
+  },
+  {
+    path: 'governing-body',
+    component: GoverningBodyComponent,
   },
   { path: '**', component: Page404Component },
 ];

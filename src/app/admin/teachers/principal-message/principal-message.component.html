@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h2>Principal's Message</h2>
+  <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
+    <div class="form-group mb-3">
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="title">
+    </div>
+    <div class="form-group mb-3">
+      <label>Principal's Name</label>
+      <input type="text" class="form-control" formControlName="principalName">
+    </div>
+    <div class="form-group mb-3">
+      <label>Designation</label>
+      <input type="text" class="form-control" formControlName="designation" readonly>
+    </div>
+    <div class="form-group mb-3">
+      <label>Message</label>
+      <textarea class="form-control" rows="6" formControlName="message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+

@@ -76,7 +76,7 @@
           "submenu": []
         },
         {
-          "path": "/admin/about/Principal’s-Message",
+          "path": "/admin/about/principals-message",
           "title": "MENUITEMS.ABOUT.LIST.PRINCIPALS-MESSAGE",
           "iconType": "",
           "icon": "",
@@ -88,7 +88,7 @@
           "submenu": []
         },
         {
-          "path": "/admin/about/College History",
+          "path": "/admin/about/college-history",
           "title": "MENUITEMS.ABOUT.LIST.COLLEGE-HISTORY",
           "iconType": "",
           "icon": "",
@@ -100,7 +100,7 @@
           "submenu": []
         },
         {
-          "path": "/admin/about/Governing Body",
+          "path": "/admin/about/governing-body",
           "title": "MENUITEMS.ABOUT.LIST.GOVERNING-BODY",
           "iconType": "",
           "icon": "",
