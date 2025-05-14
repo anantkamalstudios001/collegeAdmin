@@ -4,10 +4,7 @@ import { Validators } from 'ngx-editor';
 
 @Component({
   selector: 'app-governing-body',
-  imports:[ReactiveFormsModule]
-  
-  
-  ,
+  imports:[ReactiveFormsModule],
   templateUrl: './governing-body.component.html',
   styleUrl: './governing-body.component.scss'
 })

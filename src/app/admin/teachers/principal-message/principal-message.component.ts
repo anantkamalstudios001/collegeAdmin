@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Validators } from 'ngx-editor';
 
 @Component({
   selector: 'app-principal-message',

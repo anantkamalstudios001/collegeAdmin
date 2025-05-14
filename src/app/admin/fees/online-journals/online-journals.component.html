@@ -1,1 +1,46 @@
-<p>online-journals works!</p>
+<section class="content">
+  <div class="content-block">
+<div class="container mt-4">
+  <h2>Online Journal Entry</h2>
+  <form [formGroup]="journalForm" (ngSubmit)="onSubmit()">
+    <div class="form-group mb-3">
+      <label>Journal Title</label>
+      <input type="text" class="form-control" formControlName="title" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Department</label>
+      <input type="text" class="form-control" formControlName="department" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>ISSN Number</label>
+      <input type="text" class="form-control" formControlName="issn" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Publisher</label>
+      <input type="text" class="form-control" formControlName="publisher" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Publication Date</label>
+      <input type="date" class="form-control" formControlName="publicationDate" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Journal Link</label>
+      <input type="url" class="form-control" formControlName="link" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Description</label>
+      <textarea class="form-control" rows="5" formControlName="description"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
+</section>
+
