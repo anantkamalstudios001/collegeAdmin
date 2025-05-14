@@ -28,6 +28,13 @@ export const ADMIN_ROUTE: Route[] = [
         (m) => m.ADMIN_STUDENT_ROUTE
       ),
   },
+    {
+    path: 'academics',
+    loadChildren: () =>
+      import('./academics/academics.routes').then(
+        (m) => m.ACADEMICS_ROUTE
+      ),
+  },
   {
     path: 'faculty',
     loadChildren: () =>

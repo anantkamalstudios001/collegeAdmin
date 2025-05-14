@@ -1,0 +1,60 @@
+
+<section class="content">
+  <div class="content-block">
+    @for (breadscrum of breadscrums; track breadscrum) {
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="breadscrum.title" [items]="breadscrum.items" [active_item]="breadscrum.active">
+      </app-breadcrumb>
+    </div>
+    }
+
+    <div class="container mt-4">
+  <h2>Add Department</h2>
+
+  <form [formGroup]="departmentForm" (ngSubmit)="submitForm()">
+
+    <div class="form-group mb-3">
+      <label>Department Name</label>
+      <input type="text" class="form-control" formControlName="name" placeholder="e.g., Computer Science" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Head of Department (HOD)</label>
+      <input type="text" class="form-control" formControlName="hod" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Description</label>
+      <textarea class="form-control" rows="3" formControlName="description" placeholder="Brief info about the department"></textarea>
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Email</label>
+      <input type="email" class="form-control" formControlName="email" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Phone</label>
+      <input type="text" class="form-control" formControlName="phone" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Status</label>
+      <select class="form-control" formControlName="status">
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!departmentForm.valid">Submit</button>
+  </form>
+</div>
+
+
+
+
+    
+     </div>
+</section>
+

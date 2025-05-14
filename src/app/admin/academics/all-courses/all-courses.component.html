@@ -1,0 +1,85 @@
+
+<section class="content">
+  <div class="content-block">
+    @for (breadscrum of breadscrums; track breadscrum) {
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="breadscrum.title" [items]="breadscrum.items" [active_item]="breadscrum.active">
+      </app-breadcrumb>
+    </div>
+    }
+
+<div class="container mt-4">
+  <h2>Manage All Courses</h2>
+
+  <form [formGroup]="coursesForm" (ngSubmit)="submitForm()">
+    <div formArrayName="courses">
+
+      <div *ngFor="let course of courses.controls; let i = index" [formGroupName]="i" class="border p-3 mb-4 rounded shadow-sm">
+        <h5>Course {{ i + 1 }}</h5>
+
+        <div class="form-group mb-2">
+          <label>Course Name</label>
+          <input type="text" class="form-control" formControlName="courseName" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Department</label>
+          <input type="text" class="form-control" formControlName="department" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Course Type</label>
+          <select class="form-control" formControlName="courseType">
+            <option value="UG">UG</option>
+            <option value="PG">PG</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Certificate">Certificate</option>
+          </select>
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Duration</label>
+          <input type="text" class="form-control" formControlName="duration" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Intake</label>
+          <input type="number" class="form-control" formControlName="intake" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Eligibility</label>
+          <input type="text" class="form-control" formControlName="eligibility" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Description</label>
+          <textarea class="form-control" formControlName="description" rows="3"></textarea>
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Status</label>
+          <select class="form-control" formControlName="status">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+
+        <button class="btn btn-danger mt-2" type="button" (click)="removeCourse(i)" *ngIf="courses.length > 1">Remove</button>
+      </div>
+
+    </div>
+
+    <button class="btn btn-secondary mb-3" type="button" (click)="addCourse()">+ Add Another Course</button>
+    <button class="btn btn-primary" type="submit" [disabled]="!coursesForm.valid">Submit All</button>
+  </form>
+</div>
+
+
+
+
+
+
+    </div>
+</section>
