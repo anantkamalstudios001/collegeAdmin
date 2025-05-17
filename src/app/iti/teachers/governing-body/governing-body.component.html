@@ -1,0 +1,26 @@
+<section class="content">
+  <div class="content-block">
+<div class="form-container">
+  <h2>Governing Body</h2>
+  <form [formGroup]="governingBodyForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Member Name</label>
+      <input id="name" type="text" formControlName="name" class="form-control" placeholder="Enter Name" />
+    </div>
+
+    <div class="form-group">
+      <label for="designation">Designation</label>
+      <input id="designation" type="text" formControlName="designation" class="form-control" placeholder="Enter Designation" />
+    </div>
+
+    <div class="form-group">
+      <label for="details">Details</label>
+      <textarea id="details" rows="5" formControlName="details" class="form-control" placeholder="Enter details about the member"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="governingBodyForm.invalid">Save</button>
+  </form>
+</div>
+</div>
+</section>
+

@@ -1,0 +1,77 @@
+<section class="content">
+  <div class="content-block">
+    @for (breadscrum of breadscrums; track breadscrum) {
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="breadscrum.title" [items]="breadscrum.items" [active_item]="breadscrum.active">
+      </app-breadcrumb>
+    </div>
+    }
+    <div class="row clearfix">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+            <div class="container mt-4">
+  <h2>Schedule Alumni Meet</h2>
+  <form [formGroup]="alumniMeetForm" (ngSubmit)="submitForm()" enctype="multipart/form-data">
+    
+    <div class="form-group mb-3">
+      <label>Meet Title</label>
+      <input type="text" class="form-control" formControlName="title" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Date</label>
+      <input type="date" class="form-control" formControlName="date" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Time</label>
+      <input type="time" class="form-control" formControlName="time" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Venue</label>
+      <input type="text" class="form-control" formControlName="venue" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Description</label>
+      <textarea class="form-control" rows="4" formControlName="description"></textarea>
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Coordinator Name</label>
+      <input type="text" class="form-control" formControlName="coordinator" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Upload Poster/Invitation</label>
+      <input type="file" class="form-control" (change)="onFileSelected($event)" />
+    </div>
+
+    <div class="form-group mb-3">
+      <label>Status</label>
+      <select class="form-control" formControlName="status">
+        <option value="Upcoming">Upcoming</option>
+        <option value="Completed">Completed</option>
+        <option value="Cancelled">Cancelled</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!alumniMeetForm.valid">Submit</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

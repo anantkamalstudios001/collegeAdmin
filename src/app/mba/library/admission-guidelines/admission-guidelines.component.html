@@ -1,0 +1,42 @@
+<section class="content">
+  <div class="content-block">
+    @for (breadcrumb of breadscrumbs; track breadcrumb) {
+      <div class="block-header">
+        <app-breadcrumb 
+          [title]="breadcrumb.title"
+          [items]="breadcrumb.items"
+          [active_item]="breadcrumb.active">
+        </app-breadcrumb>
+      </div>
+    }
+
+    <div class="card">
+      <div class="card-header">
+        <h4>Add Admission Guideline</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="addGuideline()">
+          <mat-form-field appearance="fill" class="w-100">
+            <mat-label>Enter Guideline</mat-label>
+            <input matInput formControlName="guideline" placeholder="e.g., Submit documents by 15th June">
+            <mat-error *ngIf="form.controls['guideline'].invalid">Guideline is required</mat-error>
+          </mat-form-field>
+
+          <button mat-flat-button color="primary" type="submit" [disabled]="form.invalid">
+            Add Guideline
+          </button>
+        </form>
+
+        <div *ngIf="guidelines.length > 0" class="mt-4">
+          <h5>Guidelines:</h5>
+          <ul>
+            <li *ngFor="let item of guidelines; let i = index">
+              {{ item }}
+              <button mat-button color="warn" (click)="removeGuideline(i)">Remove</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

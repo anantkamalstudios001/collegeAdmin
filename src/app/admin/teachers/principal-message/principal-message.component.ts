@@ -7,6 +7,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { Validators } from 'ngx-editor';
+
 
 
 @Component({
@@ -22,6 +24,7 @@ import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.co
        
         MatButtonModule,
   ],
+
   templateUrl: './principal-message.component.html',
   styleUrls: ['./principal-message.component.scss']
 })

@@ -1,0 +1,42 @@
+<section class="content">
+  <div class="content-block">
+    @for (breadcrumb of breadscrumbs; track breadcrumb) {
+      <div class="block-header">
+        <app-breadcrumb 
+          [title]="breadcrumb.title"
+          [items]="breadcrumb.items"
+          [active_item]="breadcrumb.active">
+        </app-breadcrumb>
+      </div>
+    }
+
+    <div class="card">
+      <div class="card-header">
+        <h4>Add Library Access Info</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="addEntry()">
+          <mat-form-field appearance="fill" class="w-100">
+            <mat-label>Library Info</mat-label>
+            <input matInput formControlName="entry" placeholder="e.g., https://library.college.edu">
+            <mat-error *ngIf="form.controls['entry'].invalid">This field is required</mat-error>
+          </mat-form-field>
+
+          <button mat-flat-button color="primary" type="submit" [disabled]="form.invalid">
+            Add Entry
+          </button>
+        </form>
+
+        <div *ngIf="libraryEntries.length > 0" class="mt-4">
+          <h5>Added Access Info:</h5>
+          <ul>
+            <li *ngFor="let item of libraryEntries; let i = index">
+              {{ item }}
+              <button mat-button color="warn" (click)="removeEntry(i)">Remove</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
