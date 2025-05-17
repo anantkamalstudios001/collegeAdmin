@@ -90,27 +90,36 @@ export class SidebarComponent
   ngOnInit() {
     if (this.authService.currentUserValue) {
       const userRole = this.authService.currentUserValue.role;
-      this.userFullName =
-        this.authService.currentUserValue.firstName +
-        ' ' +
-        this.authService.currentUserValue.lastName;
+      this.userFullName = this.authService.currentUserValue.firstName +' ' + this.authService.currentUserValue.lastName;
       this.userImg = this.authService.currentUserValue.img;
-
-      this.subs.sink = this.sidebarService
-        .getRouteInfo()
-        .subscribe((routes: RouteInfo[]) => {
-          this.sidebarItems = routes.filter(
-            (x) =>
-              x.role.indexOf(userRole) !== -1 || x.role.indexOf('All') !== -1
-          );
-        });
+      this.subs.sink = this.sidebarService.getRouteInfo().subscribe((routes: RouteInfo[]) => {  this.sidebarItems = routes.filter(    (x) =>      x.role.indexOf(userRole) !== -1 || x.role.indexOf('All') !== -1  );});
+      console.log('userRole',userRole);
       if (userRole === Role.Admin) {
         this.userType = Role.Admin;
       } else if (userRole === Role.Teacher) {
         this.userType = Role.Teacher;
       } else if (userRole === Role.Student) {
         this.userType = Role.Student;
-      } else {
+      } 
+      else if (userRole === Role.Mba) {
+        this.userType = Role.Mba;
+
+      } else if (userRole === Role.Bed) {
+        this.userType = Role.Bed;
+      }else if (userRole === Role.Engineering) {
+        this.userType = Role.Engineering;
+      }else if (userRole === Role.Iti) {
+        this.userType = Role.Iti;
+      }else if (userRole === Role.Pharmacy) {
+        this.userType = Role.Pharmacy;
+      }else if (userRole === Role.Polytechnic) {
+        this.userType = Role.Polytechnic;
+      }else if (userRole === Role.Publicschool) {
+        this.userType = Role.Publicschool;
+      }
+      
+      
+      else {
         this.userType = Role.Admin;
       }
     }

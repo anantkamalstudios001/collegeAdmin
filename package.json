@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "start:large": "node --max-old-space-size=8192 ./node_modules/@angular/cli/bin/ng serve"
   },
   "private": true,
   "dependencies": {
@@ -35,8 +36,8 @@
     "@ngx-translate/core": "^16.0.3",
     "@ngx-translate/http-loader": "^16.0.0",
     "@popperjs/core": "^2.11.8",
-    "@swimlane/ngx-charts": "^21.0.0",
-    "@swimlane/ngx-datatable": "^20.1.0",
+    "@swimlane/ngx-charts": "^22.0.0",
+    "@swimlane/ngx-datatable": "^21.0.0",
     "@types/d3-shape": "^3.1.6",
     "angular-feather": "^6.5.1",
     "apexcharts": "^4.1.0",

@@ -16,8 +16,6 @@ export class SidebarService {
    */
   getRouteInfo(): Observable<RouteInfo[]> {
     // Assuming the JSON file is in the assets folder
-    return this.http
-      .get<{ routes: RouteInfo[] }>('assets/data/routes.json')
-      .pipe(map((response) => response.routes));
+    return this.http.get<{ routes: RouteInfo[] }>('assets/data/routes.json').pipe(map((response) => response.routes));
   }
 }

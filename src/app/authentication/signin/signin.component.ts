@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { CommonModule } from '@angular/common';
 @Component({
     selector: 'app-signin',
     templateUrl: './signin.component.html',
@@ -19,6 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
         MatFormFieldModule,
         MatInputModule,
         MatIconModule,
+        MatSelectModule,
+        CommonModule
     ]
 })
 export class SigninComponent
@@ -27,6 +31,8 @@ export class SigninComponent
   authForm!: UntypedFormGroup;
   submitted = false;
   loading = false;
+  selectedRole: string = '';
+
   error = '';
   hide = true;
   constructor(
@@ -38,12 +44,14 @@ export class SigninComponent
     super();
   }
 
-  ngOnInit() {
-    this.authForm = this.formBuilder.group({
-      username: ['admin@school.org', Validators.required],
-      password: ['admin@123', Validators.required],
-    });
-  }
+ngOnInit() {
+  this.authForm = this.formBuilder.group({
+    role: ['', Validators.required], // ADD THIS
+    username: ['', Validators.required],
+    password: ['', Validators.required],
+  });
+}
+
   get f() {
     return this.authForm.controls;
   }
@@ -59,42 +67,112 @@ export class SigninComponent
     this.authForm.get('username')?.setValue('student@school.org');
     this.authForm.get('password')?.setValue('student@123');
   }
-  onSubmit() {
-    this.submitted = true;
-    this.loading = true;
-    this.error = '';
-    if (this.authForm.invalid) {
-      this.error = 'Username and Password not valid !';
-      return;
-    } else {
-      this.subs.sink = this.authService
-        .login(this.f['username'].value, this.f['password'].value)
-        .subscribe({
-          next: (res) => {
-            if (res) {
-              setTimeout(() => {
-                const role = this.authService.currentUserValue.role;
-                if (role === Role.All || role === Role.Admin) {
-                  this.router.navigate(['/admin/dashboard/main']);
-                } else if (role === Role.Teacher) {
-                  this.router.navigate(['/ /dashboard']);
-                } else if (role === Role.Student) {
-                  this.router.navigate(['/student/dashboard']);
-                } else {
-                  this.router.navigate(['/authentication/signin']);
-                }
-                this.loading = false;
-              }, 1000);
-            } else {
-              this.error = 'Invalid Login';
-            }
-          },
-          error: (error) => {
-            this.error = error;
-            this.submitted = false;
-            this.loading = false;
-          },
-        });
-    }
+
+  // MBA 
+  mbaSet() {
+    this.authForm.get('username')?.setValue('username@mba');
+    this.authForm.get('password')?.setValue('password@mba');
   }
+    // MBA 
+  bedSet() {
+    this.authForm.get('username')?.setValue('username@bed');
+    this.authForm.get('password')?.setValue('password@bed');
+  }
+    engineeringSet() {
+    this.authForm.get('username')?.setValue('username@engineering');
+    this.authForm.get('password')?.setValue('password@engineering');
+  }
+    itiSet() {
+    this.authForm.get('username')?.setValue('username@iti');
+    this.authForm.get('password')?.setValue('password@iti');
+  }
+    pharmacySet() {
+    this.authForm.get('username')?.setValue('username@pharmacy');
+    this.authForm.get('password')?.setValue('password@pharmacy');
+  }
+  polytechnicSet() {
+    this.authForm.get('username')?.setValue('username@polytechnic');
+    this.authForm.get('password')?.setValue('password@polytechnic');
+  }
+  publicschoolSet() {
+    this.authForm.get('username')?.setValue('username@publicschool');
+    this.authForm.get('password')?.setValue('password@publicschool');
+  }
+
+
+onSubmit() {
+  this.submitted = true;
+  this.loading = true;
+  this.error = '';
+
+  const role = this.authForm.get('role')?.value;
+
+  // Set credentials dynamically
+  if (role === 'admin') this.adminSet();
+  else if (role === 'teacher') this.teacherSet();
+  else if (role === 'student') this.studentSet();
+  else if (role === 'mba') this.mbaSet();
+  else if (role === 'bed') this.bedSet();
+  else if (role === 'engineering') this.engineeringSet();
+  else if (role === 'iti') this.itiSet();
+  else if (role === 'pharmacy') this.pharmacySet();
+  else if (role === 'polytechnic') this.polytechnicSet();
+  else if (role === 'publicschool') this.publicschoolSet();
+
+  if (this.authForm.invalid) {
+    this.error = 'Username and Password not valid !';
+    this.loading = false;
+    return;
+  }
+
+  this.subs.sink = this.authService
+    .login(this.f['username'].value, this.f['password'].value)
+    .subscribe({
+      next: (res) => {
+        if (res) {
+          setTimeout(() => {
+            const role = this.authService.currentUserValue.role;
+            if (role === Role.All || role === Role.Admin) {
+              this.router.navigate(['/admin/dashboard/main']);
+            } else if (role === Role.Teacher) {
+              this.router.navigate(['/teacher/dashboard']);
+            } else if (role === Role.Student) {
+              this.router.navigate(['/student/dashboard']);
+            } else if (role === Role.Mba) {
+              this.router.navigate(['/mba/dashboard']);
+              
+            }  else if (role === Role.Bed) {
+              this.router.navigate(['/bed/dashboard']);
+            }  else if (role === Role.Engineering) {
+              this.router.navigate(['/engineering/dashboard']);
+            }  else if (role === Role.Iti) {
+              this.router.navigate(['/iti/dashboard']);
+            }  else if (role === Role.Pharmacy) {
+              this.router.navigate(['/pharmacy/dashboard']);
+            }  else if (role === Role.Polytechnic) {
+              this.router.navigate(['/polytechnic/dashboard']);
+            }  else if (role === Role.Publicschool) {
+              this.router.navigate(['/publicschool/dashboard']);
+            } 
+            else {
+              this.router.navigate(['/authentication/signin']);
+            }
+            this.loading = false;
+          }, 1000);
+        } else {
+          this.error = 'Invalid Login';
+          this.loading = false;
+        }
+      },
+      error: (error) => {
+        this.error = error;
+        this.submitted = false;
+        this.loading = false;
+      },
+    });
+}
+
+
+
+
 }
