@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { APIService } from 'app/bed/frount-office/api.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -36,7 +37,7 @@ export class VisionMissionComponent {
   ];
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private APIService : APIService) {
     this.form = this.fb.group({
       vision: this.fb.array([this.createParagraph()]),
       mission: this.fb.array([this.createParagraph()])
@@ -69,6 +70,11 @@ export class VisionMissionComponent {
     if (this.form.valid) {
       console.log('Submitted data:', this.form.value);
       // TODO: Send to backend
+      const payload = this.form.value;
+      this.APIService.addMissionVision(payload).subscribe((res:any) => {
+        console.log(res);
+      });
+
     }
   }
 

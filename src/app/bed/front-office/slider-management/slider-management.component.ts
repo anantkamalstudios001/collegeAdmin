@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { APIService } from 'app/bed/frount-office/api.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -39,7 +40,7 @@ export class SliderManagementComponent {
   previewUrl: string | ArrayBuffer | null = null;
   selectedImage: File | null = null;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private APIService : APIService) {
     this.bannerForm = this.fb.group({
       title: ['', Validators.required],
       link: [''],
@@ -63,18 +64,34 @@ export class SliderManagementComponent {
     }
   }
 
-  onSubmit() {
-    if (this.bannerForm.valid) {
-      const formData = new FormData();
-      Object.entries(this.bannerForm.value).forEach(([key, value]) => {
-        // formData.append(key, value);
-      });
-      if (this.selectedImage) {
-        formData.append('bannerImage', this.selectedImage);
+
+onSubmit() {
+  if (this.bannerForm.valid) {
+    const formData = new FormData();
+
+    // Append non-file fields
+    Object.entries(this.bannerForm.value).forEach(([key, value]) => {
+      if (key !== 'image') {
+        formData.append(key, value as string);
       }
-      console.log('Form Data Ready to Submit', formData);
-      // Call your backend API here
+    });
+
+    // Append file
+    if (this.selectedImage) {
+      formData.append('bannerImage', this.selectedImage);
     }
+
+    // Print for testing
+    formData.forEach((value, key) => {
+      console.log(key, value);
+    });
+
+    // Now you can send this formData to the backend
+
+    this.APIService.addBanner(formData).subscribe((res:any) => {
+      console.log(res);
+    })
   }
+}
 
 }

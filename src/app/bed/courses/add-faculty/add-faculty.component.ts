@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UntypedFormGroup, UntypedFormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, FormsModule, ReactiveFormsModule, FormBuilder, FormGroup } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -7,7 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
-import { FileUploadComponent } from '@shared/components/file-upload/file-upload.component';
+import { APIMAINService } from 'app/bed/apimain.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -21,14 +21,12 @@ import { Validators } from 'ngx-editor';
         MatSelectModule,
         MatOptionModule,
         MatDatepickerModule,
-        FileUploadComponent,
         MatButtonModule,
   ],
   templateUrl: './add-faculty.component.html',
   styleUrl: './add-faculty.component.scss'
 })
 export class AddFacultyComponent {
-staffForm: UntypedFormGroup;
   breadscrums = [
     {
       title: 'Add Staff',
@@ -36,27 +34,27 @@ staffForm: UntypedFormGroup;
       active: 'Add Staff',
     },
   ];
-  constructor(private fb: UntypedFormBuilder) {
-    this.staffForm = this.fb.group({
-      first: ['', [Validators.required]],
-      last: [''],
-      gender: ['', [Validators.required]],
-      mobile: ['', [Validators.required]],
-      password: ['', [Validators.required]],
-      conformPassword: ['', [Validators.required]],
-      designation: [''],
-      department: [''],
-      address: [''],
-      email: [
-        '',
-        [Validators.required, Validators.minLength(5)],
-      ],
-      dob: ['', [Validators.required]],
-      education: [''],
-      uploadFile: [''],
+facultyForm!: FormGroup;
+
+  constructor(private fb: FormBuilder, private APIService: APIMAINService) {}
+
+  ngOnInit(): void {
+    this.facultyForm = this.fb.group({
+      name: ['', Validators.required],
+      designation: ['', Validators.required],
+      department: ['', Validators.required],
+      qualification: ['', Validators.required],
+      experience: ['', Validators.required],
+      isActive: [true]
     });
   }
+
   onSubmit() {
-    console.log('Form Value', this.staffForm.value);
+    if (this.facultyForm.valid) {
+      console.log(this.facultyForm.value);
+      this.APIService.addFaculty(this.facultyForm.value).subscribe((res:any) => {
+        console.log('Faculty added:', res);
+      });
+    }
   }
 }

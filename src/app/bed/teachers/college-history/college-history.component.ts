@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { APIService } from 'app/bed/frount-office/api.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -11,7 +12,7 @@ import { Validators } from 'ngx-editor';
 export class CollegeHistoryComponent {
   historyForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private APIService: APIService) {}
 
   ngOnInit(): void {
     this.historyForm = this.fb.group({
@@ -22,5 +23,9 @@ export class CollegeHistoryComponent {
   }
   onSubmit() {
     console.log(this.historyForm);
+        this.APIService.addHistory(this.historyForm.value).subscribe((res:any) => {
+      console.log(res);
+    });
+
   }
 }

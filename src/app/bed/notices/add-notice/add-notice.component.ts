@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // ✅ OK to keep
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { APIMAINService } from 'app/bed/apimain.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -40,7 +41,7 @@ export class AddNoticeComponent {
 
   noticeForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private APIservice:APIMAINService) {}
 
   ngOnInit(): void {
     this.noticeForm = this.fb.group({
@@ -52,11 +53,33 @@ export class AddNoticeComponent {
     });
   }
 
-  onSubmit(): void {
-    if (this.noticeForm.valid) {
-      console.log(this.noticeForm.value);
-      // Add logic to send data to backend
-    }
+onSubmit() {
+  if (this.noticeForm.valid) {
+    const rawForm = this.noticeForm.value;
+
+    // Convert moment dates to ISO strings
+    const startDate = rawForm.startDate?._d
+      ? new Date(rawForm.startDate._d).toISOString()
+      : rawForm.startDate;
+    const endDate = rawForm.endDate?._d
+      ? new Date(rawForm.endDate._d).toISOString()
+      : rawForm.endDate;
+
+    const finalNoticeData = {
+      title: rawForm.title,
+      category: rawForm.category,
+      startDate: startDate,
+      endDate: endDate,
+      content: rawForm.content
+    };
+
+    this.APIservice.addNotice(finalNoticeData).subscribe((res: any) => {
+      console.log('Notice added:', res);
+    });
+  } else {
+    console.log('Notice form invalid');
   }
+}
+
 
 }

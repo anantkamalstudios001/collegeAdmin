@@ -1,5 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -8,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
 import { FileUploadComponent } from '@shared/components/file-upload/file-upload.component';
+import { APIMAINService } from 'app/bed/apimain.service';
 
 @Component({
   selector: 'app-register-alumni',
@@ -20,42 +22,47 @@ import { FileUploadComponent } from '@shared/components/file-upload/file-upload.
         MatSelectModule,
         MatOptionModule,
         MatDatepickerModule,
-        FileUploadComponent,
         MatButtonModule,
+        CommonModule
   ],
   templateUrl: './register-alumni.component.html',
   styleUrl: './register-alumni.component.scss'
 })
 export class RegisterAlumniComponent {
-  staffForm: UntypedFormGroup;
+  alumniForm!: FormGroup;
+
   breadscrums = [
     {
-      title: 'Add Staff',
-      items: ['Staff'],
-      active: 'Add Staff',
+      title: 'Register Alumni',
+      items: ['Alumni'],
+      active: 'Register Alumni',
     },
   ];
-  constructor(private fb: UntypedFormBuilder) {
-    this.staffForm = this.fb.group({
-      first: ['', [Validators.required, Validators.pattern('[a-zA-Z]+')]],
-      last: [''],
-      gender: ['', [Validators.required]],
-      mobile: ['', [Validators.required]],
-      password: ['', [Validators.required]],
-      conformPassword: ['', [Validators.required]],
-      designation: [''],
-      department: [''],
-      address: [''],
-      email: [
-        '',
-        [Validators.required, Validators.email, Validators.minLength(5)],
-      ],
-      dob: ['', [Validators.required]],
-      education: [''],
-      uploadFile: [''],
+
+  constructor(private fb: FormBuilder, private APIService : APIMAINService) {}
+
+  ngOnInit(): void {
+    this.alumniForm = this.fb.group({
+      fullName: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
+      course: ['', Validators.required],
+      passingYear: ['', [Validators.required, Validators.pattern(/^\d{4}$/)]],
+      currentOccupation: [''],
+      location: ['']
     });
   }
-  onSubmit() {
-    console.log('Form Value', this.staffForm.value);
+
+  onSubmit(): void {
+    if (this.alumniForm.valid) {
+      console.log('Alumni Registered:', this.alumniForm.value);
+      this.APIService.addAlumni(this.alumniForm.value).subscribe((res:any) => {
+        console.log(res);
+        
+      })
+    } else {
+      this.alumniForm.markAllAsTouched();
+    }
   }
+
 }

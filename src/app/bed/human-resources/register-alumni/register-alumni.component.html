@@ -14,163 +14,55 @@
             <h2>Add Alumini</h2>
           </div>
           <div class="body">
-            <form class="m-4" [formGroup]="staffForm" (ngSubmit)="onSubmit()">
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>First name</mat-label>
-                    <input matInput formControlName="first" required>
-                    @if (staffForm.get('first')?.hasError('required')) {
-                    <mat-error>
-                      First name is required
-                    </mat-error>
-                    }
-                  </mat-form-field>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Last name</mat-label>
-                    <input matInput formControlName="last">
-                  </mat-form-field>
+            <form [formGroup]="alumniForm" (ngSubmit)="onSubmit()">
+              <div class="form-group mb-3">
+                <label>Full Name</label>
+                <input formControlName="fullName" class="form-control" />
+                <div *ngIf="alumniForm.get('fullName')?.touched && alumniForm.get('fullName')?.invalid" class="text-danger">
+                  Full name is required.
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Gender</mat-label>
-                    <mat-select formControlName="gender" required>
-                      <mat-option [value]="'Male'">
-                        Male
-                      </mat-option>
-                      <mat-option [value]="'Female'">
-                        Female
-                      </mat-option>
-                    </mat-select>
-                    @if (staffForm.get('gender')?.hasError('required')) {
-                    <mat-error>
-                      Gender is required
-                    </mat-error>
-                    }
-                  </mat-form-field>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Mobile</mat-label>
-                    <input matInput formControlName="mobile" type="number" required>
-                  </mat-form-field>
+
+              <div class="form-group mb-3">
+                <label>Email</label>
+                <input formControlName="email" class="form-control" type="email" />
+                <div *ngIf="alumniForm.get('email')?.touched && alumniForm.get('email')?.invalid" class="text-danger">
+                  Enter a valid email.
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Password</mat-label>
-                    <input matInput formControlName="password" type="password" required>
-                    @if (staffForm.get('password')?.hasError('required')) {
-                    <mat-error>
-                      password is required
-                    </mat-error>
-                    }
-                  </mat-form-field>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Re-Enter Password</mat-label>
-                    <input matInput formControlName="conformPassword" type="password" required>
-                    @if (staffForm.get('conformPassword')?.hasError('required')) {
-                    <mat-error>
-                      Re-Enter password is required
-                    </mat-error>
-                    }
-                  </mat-form-field>
+
+              <div class="form-group mb-3">
+                <label>Phone</label>
+                <input formControlName="phone" class="form-control" />
+                <div *ngIf="alumniForm.get('phone')?.touched && alumniForm.get('phone')?.invalid" class="text-danger">
+                  Enter a valid 10-digit phone number.
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Designation</mat-label>
-                    <input matInput formControlName="designation">
-                  </mat-form-field>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Select Department</mat-label>
-                    <mat-select formControlName="department" required>
-                      <mat-option [value]="'1'">
-                        Library
-                      </mat-option>
-                      <mat-option [value]="'2'">
-                        Administration
-                      </mat-option>
-                      <mat-option [value]="'3'">
-                        Transport
-                      </mat-option>
-                      <mat-option [value]="'4'">
-                        Laboratory
-                      </mat-option>
-                    </mat-select>
-                    @if (staffForm.get('department')?.hasError('required')) {
-                    <mat-error>
-                      Select Any Department
-                    </mat-error>
-                    }
-                  </mat-form-field>
+
+              <div class="form-group mb-3">
+                <label>Course</label>
+                <input formControlName="course" class="form-control" />
+              </div>
+
+              <div class="form-group mb-3">
+                <label>Passing Year</label>
+                <input formControlName="passingYear" class="form-control" />
+                <div *ngIf="alumniForm.get('passingYear')?.touched && alumniForm.get('passingYear')?.invalid" class="text-danger">
+                  Enter a valid year (e.g., 2020).
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Email</mat-label>
-                    <input matInput formControlName="email" required>
-                    @if (staffForm.get('email')?.hasError('email') && staffForm.get('email')?.touched) {
-                    <mat-error>
-                      Please enter a valid email address
-                    </mat-error>
-                    }
-                  </mat-form-field>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Date Of Birth</mat-label>
-                    <input matInput [matDatepicker]="picker" formControlName="dob" required>
-                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
-                    @if (staffForm.get('dob')?.hasError('required')) {
-                    <mat-error>
-                      Please select date
-                    </mat-error>
-                    }
-                  </mat-form-field>
-                </div>
+
+              <div class="form-group mb-3">
+                <label>Current Occupation</label>
+                <input formControlName="currentOccupation" class="form-control" />
               </div>
-              <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Address</mat-label>
-                    <textarea matInput formControlName="address"></textarea>
-                  </mat-form-field>
-                </div>
+
+              <div class="form-group mb-3">
+                <label>Location</label>
+                <input formControlName="location" class="form-control" />
               </div>
-              <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">
-                  <label>Upload</label>
-                  <app-file-upload formControlName="uploadFile"></app-file-upload>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
-                  <mat-form-field class="example-full-width mb-3" appearance="outline">
-                    <mat-label>Education</mat-label>
-                    <textarea matInput formControlName="education"></textarea>
-                  </mat-form-field>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
-                  <button class="btn-space" [disabled]="!staffForm.valid " mat-flat-button
-                    color="primary">Submit</button>
-                  <button type="button" mat-flat-button class="formCancelBtn">Cancel</button>
-                </div>
-              </div>
+
+              <button type="submit" class="btn btn-primary">Register Alumni</button>
             </form>
           </div>
         </div>

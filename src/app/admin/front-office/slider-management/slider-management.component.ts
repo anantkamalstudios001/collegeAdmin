@@ -63,18 +63,29 @@ export class SliderManagementComponent {
     }
   }
 
-  onSubmit() {
-    if (this.bannerForm.valid) {
-      const formData = new FormData();
-      Object.entries(this.bannerForm.value).forEach(([key, value]) => {
-        // formData.append(key, value);
-      });
-      if (this.selectedImage) {
-        formData.append('bannerImage', this.selectedImage);
+onSubmit() {
+  if (this.bannerForm.valid) {
+    const formData = new FormData();
+
+    // Append non-file fields
+    Object.entries(this.bannerForm.value).forEach(([key, value]) => {
+      if (key !== 'image') {
+        formData.append(key, value as string);
       }
-      console.log('Form Data Ready to Submit', formData);
-      // Call your backend API here
+    });
+
+    // Append file
+    if (this.selectedImage) {
+      formData.append('bannerImage', this.selectedImage);
     }
+
+    // Print for testing
+    formData.forEach((value, key) => {
+      console.log(key, value);
+    });
+
+    // Now you can send this formData to the backend
   }
+}
 
 }

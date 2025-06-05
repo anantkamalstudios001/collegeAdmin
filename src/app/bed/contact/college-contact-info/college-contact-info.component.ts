@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
 import { FileUploadComponent } from '@shared/components/file-upload/file-upload.component';
+import { APIMAINService } from 'app/bed/apimain.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -40,7 +41,7 @@ export class CollegeContactInfoComponent {
     },
   ];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private APIservice : APIMAINService) {}
 
   ngOnInit(): void {
     this.collegeContactForm = this.fb.group({
@@ -61,7 +62,9 @@ export class CollegeContactInfoComponent {
   onSubmit(): void {
     if (this.collegeContactForm.valid) {
       console.log(this.collegeContactForm.value);
-      // Add logic to send data to backend
+      this.APIservice.addCollegeContactInfo(this.collegeContactForm.value).subscribe((res:any) => {
+        console.log(res);
+      })
     }
   }
 

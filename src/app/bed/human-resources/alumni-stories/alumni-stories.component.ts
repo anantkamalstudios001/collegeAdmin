@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -7,7 +8,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
-import { FileUploadComponent } from '@shared/components/file-upload/file-upload.component';
 
 @Component({
   selector: 'app-alumni-stories',
@@ -21,6 +21,7 @@ import { FileUploadComponent } from '@shared/components/file-upload/file-upload.
         MatOptionModule,
         MatDatepickerModule,
         MatButtonModule,
+        CommonModule
   ],
   templateUrl: './alumni-stories.component.html',
   styleUrl: './alumni-stories.component.scss'
@@ -28,52 +29,31 @@ import { FileUploadComponent } from '@shared/components/file-upload/file-upload.
 export class AlumniStoriesComponent {
   breadscrums = [
     {
-      title: 'Add Staff',
-      items: ['Staff'],
-      active: 'Add Staff',
+      title: 'Alumni Stories',
+      items: ['Alumni'],
+      active: 'Alumni Stories',
     },
   ];
- alumniForm: FormGroup;
-  selectedPhoto: File | null = null;
+ storyForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {
-    this.alumniForm = this.fb.group({
-      name: ['', Validators.required],
-      batch: ['', Validators.required],
-      position: ['', Validators.required],
-      organization: [''],
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.storyForm = this.fb.group({
+      fullName: ['', Validators.required],
+      batch: ['', [Validators.required, Validators.pattern(/^\d{4}$/)]],
       title: ['', Validators.required],
-      story: ['', Validators.required],
-      status: ['Published', Validators.required]
+      story: ['', [Validators.required, Validators.minLength(50)]]
     });
   }
 
-  onFileSelected(event: any) {
-    const file = event.target.files[0];
-    if (file) {
-      this.selectedPhoto = file;
-    }
-  }
-
-  submitForm() {
-    if (this.alumniForm.valid) {
-      const formData = new FormData();
-      formData.append('name', this.alumniForm.value.name);
-      formData.append('batch', this.alumniForm.value.batch);
-      formData.append('position', this.alumniForm.value.position);
-      formData.append('organization', this.alumniForm.value.organization || '');
-      formData.append('title', this.alumniForm.value.title);
-      formData.append('story', this.alumniForm.value.story);
-      formData.append('status', this.alumniForm.value.status);
-
-      if (this.selectedPhoto) {
-        formData.append('photo', this.selectedPhoto);
-      }
-
-      console.log('Alumni Story Ready for Submission:', formData);
-      // Submit to backend API using HttpClient
+  onSubmit(): void {
+    if (this.storyForm.valid) {
+      console.log('Alumni Story Submitted:', this.storyForm.value);
+      // TODO: Send data to backend service
     } else {
-      this.alumniForm.markAllAsTouched();
+      this.storyForm.markAllAsTouched();
     }
   }
+
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { APIMAINService } from 'app/bed/apimain.service';
 import { Validators } from 'ngx-editor';
 
 @Component({
@@ -9,18 +10,25 @@ import { Validators } from 'ngx-editor';
   styleUrl: './governing-body.component.scss'
 })
 export class GoverningBodyComponent {
-  governingBodyForm!: FormGroup;
+governingBodyForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private APIService: APIMAINService) {}
 
   ngOnInit(): void {
     this.governingBodyForm = this.fb.group({
-      title: ['', [Validators.required]],
-      content: ['', [Validators.required, Validators.minLength(50)]]
+      name: ['', Validators.required],
+      designation: ['', Validators.required],
+      details: ['', [Validators.required, Validators.minLength(20)]],
     });
-
   }
+
   onSubmit() {
-    console.log(this.governingBodyForm);
-}
+    if (this.governingBodyForm.valid) {
+      console.log(this.governingBodyForm.value);
+      this.APIService.addGoverningBody(this.governingBodyForm.value).subscribe(res => {
+        console.log(res);
+      });
+    }
+  }
+
 }

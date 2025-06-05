@@ -13,53 +13,42 @@
        
       <div class="container mt-4">
   <h2>Submit Alumni Story</h2>
-  <form [formGroup]="alumniForm" (ngSubmit)="submitForm()" enctype="multipart/form-data">
-    
-    <div class="form-group mb-3">
-      <label>Alumni Name</label>
-      <input type="text" class="form-control" formControlName="name" />
+<form [formGroup]="storyForm" (ngSubmit)="onSubmit()">
+  <div class="form-group mb-3">
+    <label>Full Name</label>
+    <input formControlName="fullName" class="form-control" />
+    <div *ngIf="storyForm.get('fullName')?.touched && storyForm.get('fullName')?.invalid" class="text-danger">
+      Full name is required.
     </div>
+  </div>
 
-    <div class="form-group mb-3">
-      <label>Batch / Graduation Year</label>
-      <input type="text" class="form-control" formControlName="batch" />
+  <div class="form-group mb-3">
+    <label>Batch (Year)</label>
+    <input formControlName="batch" class="form-control" />
+    <div *ngIf="storyForm.get('batch')?.touched && storyForm.get('batch')?.invalid" class="text-danger">
+      Enter a valid year (e.g., 2015).
     </div>
+  </div>
 
-    <div class="form-group mb-3">
-      <label>Current Position</label>
-      <input type="text" class="form-control" formControlName="position" />
+  <div class="form-group mb-3">
+    <label>Story Title</label>
+    <input formControlName="title" class="form-control" />
+    <div *ngIf="storyForm.get('title')?.touched && storyForm.get('title')?.invalid" class="text-danger">
+      Title is required.
     </div>
+  </div>
 
-    <div class="form-group mb-3">
-      <label>Organization</label>
-      <input type="text" class="form-control" formControlName="organization" />
+  <div class="form-group mb-3">
+    <label>Your Story</label>
+    <textarea formControlName="story" class="form-control" rows="6"></textarea>
+    <div *ngIf="storyForm.get('story')?.touched && storyForm.get('story')?.invalid" class="text-danger">
+      Story is required (min 50 characters).
     </div>
+  </div>
 
-    <div class="form-group mb-3">
-      <label>Story Title</label>
-      <input type="text" class="form-control" formControlName="title" />
-    </div>
+  <button type="submit" class="btn btn-success">Submit Story</button>
+</form>
 
-    <div class="form-group mb-3">
-      <label>Full Story</label>
-      <textarea class="form-control" rows="5" formControlName="story"></textarea>
-    </div>
-
-    <div class="form-group mb-3">
-      <label>Upload Alumni Photo</label>
-      <input type="file" class="form-control" formControlName="photo" (change)="onFileSelected($event)" />
-    </div>
-
-    <div class="form-group mb-3">
-      <label>Status</label>
-      <select class="form-control" formControlName="status">
-        <option value="Published">Published</option>
-        <option value="Draft">Draft</option>
-      </select>
-    </div>
-
-    <button type="submit" class="btn btn-success" [disabled]="!alumniForm.valid">Submit</button>
-  </form>
 </div>
 
         </div>
